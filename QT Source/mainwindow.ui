@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>650</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>RUBO IPM</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QToolBar{border-color: rgb(0, 0, 0);border:1px solid;}</string>
+  </property>
+  <property name="documentMode">
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QPushButton" name="button_openpic">
+    <property name="geometry">
+     <rect>
+      <x>1050</x>
+      <y>460</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>打开图片</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="button_change">
+    <property name="geometry">
+     <rect>
+      <x>1050</x>
+      <y>500</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>透视变换</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="text_high">
+    <property name="geometry">
+     <rect>
+      <x>1100</x>
+      <y>70</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_high">
+    <property name="geometry">
+     <rect>
+      <x>1000</x>
+      <y>80</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>结果图高度：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_ysite">
+    <property name="geometry">
+     <rect>
+      <x>950</x>
+      <y>130</y>
+      <width>141</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>方形中心距顶部像素：</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="text_ysite">
+    <property name="geometry">
+     <rect>
+      <x>1100</x>
+      <y>120</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="text_width">
+    <property name="geometry">
+     <rect>
+      <x>1100</x>
+      <y>20</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_width">
+    <property name="geometry">
+     <rect>
+      <x>1000</x>
+      <y>30</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>结果图宽度：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_len">
+    <property name="geometry">
+     <rect>
+      <x>1000</x>
+      <y>180</y>
+      <width>141</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>方形像素边长：</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="text_len">
+    <property name="geometry">
+     <rect>
+      <x>1100</x>
+      <y>170</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_x1">
+    <property name="geometry">
+     <rect>
+      <x>1000</x>
+      <y>230</y>
+      <width>21</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>X1:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_y1">
+    <property name="geometry">
+     <rect>
+      <x>1100</x>
+      <y>230</y>
+      <width>21</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Y1:</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="text_x1">
+    <property name="geometry">
+     <rect>
+      <x>1030</x>
+      <y>220</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="text_y1">
+    <property name="geometry">
+     <rect>
+      <x>1130</x>
+      <y>220</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="text_y2">
+    <property name="geometry">
+     <rect>
+      <x>1130</x>
+      <y>270</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="text_x2">
+    <property name="geometry">
+     <rect>
+      <x>1030</x>
+      <y>270</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="text_x3">
+    <property name="geometry">
+     <rect>
+      <x>1030</x>
+      <y>320</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="text_x4">
+    <property name="geometry">
+     <rect>
+      <x>1030</x>
+      <y>370</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="text_y3">
+    <property name="geometry">
+     <rect>
+      <x>1130</x>
+      <y>320</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="text_y4">
+    <property name="geometry">
+     <rect>
+      <x>1130</x>
+      <y>370</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_x2">
+    <property name="geometry">
+     <rect>
+      <x>1000</x>
+      <y>280</y>
+      <width>21</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>X2:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_x3">
+    <property name="geometry">
+     <rect>
+      <x>1000</x>
+      <y>330</y>
+      <width>21</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>X3:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_x4">
+    <property name="geometry">
+     <rect>
+      <x>1000</x>
+      <y>380</y>
+      <width>21</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>X4:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_y2">
+    <property name="geometry">
+     <rect>
+      <x>1100</x>
+      <y>280</y>
+      <width>21</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Y2:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_y3">
+    <property name="geometry">
+     <rect>
+      <x>1100</x>
+      <y>330</y>
+      <width>21</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Y3:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_y4">
+    <property name="geometry">
+     <rect>
+      <x>1100</x>
+      <y>380</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Y4:</string>
+    </property>
+   </widget>
+   <widget class="myLabel" name="label_pic1">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>940</width>
+      <height>600</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::PlainText</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="button_clear">
+    <property name="geometry">
+     <rect>
+      <x>1050</x>
+      <y>420</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>清除</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_tips">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>605</y>
+      <width>1200</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>提示：</string>
+    </property>
+   </widget>
+   <zorder>label_pic1</zorder>
+   <zorder>button_openpic</zorder>
+   <zorder>button_change</zorder>
+   <zorder>text_high</zorder>
+   <zorder>label_high</zorder>
+   <zorder>label_ysite</zorder>
+   <zorder>text_ysite</zorder>
+   <zorder>text_width</zorder>
+   <zorder>label_width</zorder>
+   <zorder>label_len</zorder>
+   <zorder>text_len</zorder>
+   <zorder>label_x1</zorder>
+   <zorder>label_y1</zorder>
+   <zorder>text_x1</zorder>
+   <zorder>text_y1</zorder>
+   <zorder>text_y2</zorder>
+   <zorder>text_x2</zorder>
+   <zorder>text_x3</zorder>
+   <zorder>text_x4</zorder>
+   <zorder>text_y3</zorder>
+   <zorder>text_y4</zorder>
+   <zorder>label_x2</zorder>
+   <zorder>label_x3</zorder>
+   <zorder>label_x4</zorder>
+   <zorder>label_y2</zorder>
+   <zorder>label_y3</zorder>
+   <zorder>label_y4</zorder>
+   <zorder>button_clear</zorder>
+   <zorder>label_tips</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1200</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_doc">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="open"/>
+    <addaction name="about"/>
+    <addaction name="action_2"/>
+   </widget>
+   <addaction name="menu_doc"/>
+  </widget>
+  <action name="open">
+   <property name="text">
+    <string>打开图片</string>
+   </property>
+   <property name="toolTip">
+    <string>打开图片</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="about">
+   <property name="text">
+    <string>关于</string>
+   </property>
+   <property name="toolTip">
+    <string>关于</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
+   </property>
+  </action>
+  <action name="action_2">
+   <property name="text">
+    <string>退出</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>myLabel</class>
+   <extends>QLabel</extends>
+   <header location="global">rubo_label.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
