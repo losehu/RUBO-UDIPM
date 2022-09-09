@@ -9,8 +9,6 @@ This software has no relationship with the author's school (NEFU) during the 17t
 /**************************************TO Ares,NEFUER****************************************************/
 If you are NEFUER,please read the following:
 
-This remark represents my personal opinion: There's a man in Ares,NEFU is son of a bitch.
-
 If you are in Ares,NEFU do not use this software and code without my permission.
 
 Of course, you can not use it. Under the "guidance" of some people, you should be confident that you can surpass me.
