@@ -14,7 +14,3 @@ This software has no relationship with the author's school (NEFU) during the 17t
 If you are NEFUER,please read the following:
 
 If you are in Ares,NEFU do not use this software and code without my permission.
-
-Of course, you can not use it. Under the "guidance" of some people, you should be confident that you can surpass me.
-
-"Man is doing, and heaven is watching" to you and someone.
