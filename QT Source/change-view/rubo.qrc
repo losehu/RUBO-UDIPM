@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>RUBO1.png</file>
+        <file>RUBO2.png</file>
+        <file>RUBO1-small.png</file>
+        <file>RUBO1-tou.png</file>
+        <file>RUBO1-tou.ico</file>
+    </qresource>
+</RCC>
