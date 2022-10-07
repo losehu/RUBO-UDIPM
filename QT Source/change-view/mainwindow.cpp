@@ -21,12 +21,12 @@ MainWindow::MainWindow(QWidget *parent) :
     QTimer *timer = new QTimer(this); /* 创建一个新的定时器 */
     connect(timer, SIGNAL(timeout()), this, SLOT(timerUpdate()));
     timer->start(1); /* 设置溢出时间为1秒，并启动定时器 */
-    qsrand(QTime(0, 0, 0).secsTo(QTime::currentTime()));
+    srand(QTime(0, 0, 0).secsTo(QTime::currentTime()));
     open_mainwindows_updata_windows();
 
    }
 bool MainWindow::judge_int(QString a) {
-    if (!a.contains(QRegExp("^\\d+$"))) {
+    if (!a.contains(QRegularExpression("^\\d+$"))) {
         QMessageBox::critical(this, "错误", "参数输入错误！");
         return 0;
     }
@@ -41,9 +41,9 @@ void MainWindow::open_pic_update_windows() {
     ui->label_pic1->setGeometry(ui->label_pic1->x(), ui->label_pic1->y(), pic.show_width, pic.show_high);
 }
 void MainWindow::open_mainwindows_updata_windows() {
-    QDesktopWidget *desktopWidget = QApplication::desktop();
+    QRect screenRect = QGuiApplication::primaryScreen()->geometry();
+
     //获取设备屏幕大小
-    QRect screenRect = desktopWidget->screenGeometry();
     screenX = screenRect.width();
     screenY = screenRect.height();
     int init_width = 114, init_high = 100;
@@ -157,7 +157,6 @@ void MainWindow::on_button_openpic_clicked() {
     pic.width = img.width();
     pic.high = img.height();
     pic.show_width = pic.zoom * pic.width;
-    cout<< pic.zoom <<endl;
     pic.show_high = pic.zoom * pic.high;
     open_pic_update_windows();
     init_para();
@@ -180,12 +179,14 @@ void MainWindow::on_button_clear_clicked() {
 }
 void MainWindow::timerUpdate() { /* 定时器溢出处理 */
     if (!pic.PIC_OPEN)return;
+
     if (pic.change) {
         QString str = "透视变换成功,已复制至剪切板";
         ui->label_tips->setText(str);
         return;
     }
     if (mouse_flag.enter) {
+
         if (mouse_flag.click == 2) {
             if (pic.click_cnt == 1) {
                 QString str = "选中第一个点x:" + QString::number(mouse_flag.x, 10) + "   " + "y:" +
@@ -280,7 +281,7 @@ void MainWindow::on_about_triggered() {
     MBox.setWindowTitle("About RUBO IPM");
     MBox.setText("RUBO IPM 1.4.0");
     MBox.setInformativeText(
-            "Based on Qt 5.12.12 (MinGW 7.3.0 64 bit)\n\nBuilt on Sep 23 2022 23:23:33\n\nFrom revision 1.4.0\n\nChecked by RUBO\n\nTHIS PROGRAM IS ONLY PROVIDED FOR LEARNING AND\nCOMMUNICATION, AND HAS NOTHING TO DOWITH ANY\nSCHOOL OR ORGANIZATION. ANY FORM OF COMMERCIAL\nUSE IS PROHIBITED.");
+            "Based on Qt 6.3.1 (Clang 13.0 (Apple), arm64)\n\nBuilt on Oct 7 2022 19:15:33\n\nFrom revision 1.4.0\n\nChecked by RUBO\n\nTHIS PROGRAM IS ONLY PROVIDED FOR LEARNING AND\nCOMMUNICATION, AND HAS NOTHING TO DOWITH ANY\nSCHOOL OR ORGANIZATION. ANY FORM OF COMMERCIAL\nUSE IS PROHIBITED.");
     MBox.setIconPixmap(QPixmap(":RUBO1-small.png"));
     QPushButton *agreeBut = MBox.addButton("Close", QMessageBox::AcceptRole);
     MBox.exec();

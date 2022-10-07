@@ -5,9 +5,9 @@
 #include "opencv2/opencv.hpp"
 #include "qlabel.h"
 #include "qdebug.h"
-#include "bits/stdc++.h"
+#include "ty.h"
 #include "qtimer.h"
-#include"QFileDialog.h"
+#include"qfiledialog.h"
 #include <QImage>
 #include <QKeyEvent>
 #include <QPixmap>
@@ -15,8 +15,8 @@
 #include <QMessageBox>
 #include <QScreen>
 #include <QGuiApplication>
-#include <QDesktopWidget>
-#include "rubo_label.h"
+//#include <QDesktopWidget>
+#include <QScreen>
 #include <QTimer>
 #include <QTime>
 #include <QDebug>
@@ -70,7 +70,6 @@ private slots:
 
     void on_button_change_clicked();
 
-//    void on_action_2_triggered();
 
     void on_about_triggered();
 

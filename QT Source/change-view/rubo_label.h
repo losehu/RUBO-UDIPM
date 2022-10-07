@@ -13,9 +13,11 @@ public:
      myLabel(QWidget *parent = nullptr);
 
     //鼠标进入事件
-    void enterEvent(QEvent *event);
+     void enterEvent(QEnterEvent *event);
+
     //鼠标离开事件
-    void leaveEvent(QEvent *event);
+     void leaveEvent(QEnterEvent *event);
+
     void mousePressEvent(QMouseEvent *ev);
 
     void mouseMoveEvent(QMouseEvent *ev);

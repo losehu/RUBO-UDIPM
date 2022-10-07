@@ -42,14 +42,15 @@ void myLabel::mousePressEvent(QMouseEvent *ev)
     
 }
 //鼠标进入事件
-void myLabel::enterEvent(QEvent *event)
+void myLabel::enterEvent(QEnterEvent *event)
 {
     mouse_flag.enter=1;
     
 }
 //鼠标离开事件
-void myLabel::leaveEvent(QEvent * )
-{
+    void myLabel::leaveEvent(QEnterEvent *event)
+    {
+
     mouse_flag.enter=0;
 }
 
@@ -60,7 +61,7 @@ void myLabel::mouseMoveEvent(QMouseEvent *ev)
     mouse_flag.x=ev->x()/pic.zoom;
     mouse_flag.y=ev->y()/pic.zoom;
     mouse_flag.move=1;
-    
+
     
 }
 
