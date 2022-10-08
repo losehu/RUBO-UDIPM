@@ -364,6 +364,19 @@
      <string>提示：</string>
     </property>
    </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>440</y>
+      <width>100</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PushButton</string>
+    </property>
+   </widget>
    <zorder>label_pic1</zorder>
    <zorder>button_openpic</zorder>
    <zorder>button_change</zorder>
@@ -393,6 +406,7 @@
    <zorder>label_y4</zorder>
    <zorder>button_clear</zorder>
    <zorder>label_tips</zorder>
+   <zorder>pushButton</zorder>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
@@ -400,7 +414,7 @@
      <x>0</x>
      <y>0</y>
      <width>1200</width>
-     <height>26</height>
+     <height>22</height>
     </rect>
    </property>
    <widget class="QMenu" name="menu_doc">

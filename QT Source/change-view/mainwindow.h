@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+
 #include "opencv2/opencv.hpp"
 #include "qlabel.h"
 #include "qdebug.h"
@@ -28,6 +29,7 @@
 #include <QTextEdit>
 /***********************************RUBO HEADFILE*********************************/
 #include "change-view.h"
+#include "mywindow.h"
 using namespace std;
 using namespace cv;
 namespace Ui {
@@ -75,8 +77,12 @@ private slots:
 
     void on_open_triggered();
 
+    void on_pushButton_clicked();
+
+
 private:
     int id1;
+    MyWindow myw;
 
 
 };

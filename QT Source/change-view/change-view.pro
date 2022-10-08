@@ -28,17 +28,20 @@ SOURCES += \
         main.cpp \
         mainwindow.cpp \
     change-view.cpp \
+    mywindow.cpp \
     rubo_label.cpp
 
 HEADERS += \
         mainwindow.h \
     change-view.h \
+    mywindow.h \
     rubo_label.h \
     ty.h
 
 FORMS += \
-        mainwindow.ui
-
+        mainwindow.ui \
+        mywindow.ui
+UI_DIR=/Users/rubo/Documents/github/QT Source/change-view/UI
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
