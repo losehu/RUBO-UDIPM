@@ -41,27 +41,20 @@ HEADERS += \
 FORMS += \
         mainwindow.ui \
         mywindow.ui
-UI_DIR=/Users/rubo/Documents/github/QT Source/change-view/UI
-# Default rules for deployment.
+UI_DIR=./UI
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
-INCLUDEPATH += /opt/homebrew/Cellar/opencv/4.6.0/include/opencv4/opencv2/
-INCLUDEPATH +=/opt/homebrew/Cellar/opencv/4.6.0/include/
-INCLUDEPATH += /opt/homebrew/Cellar/opencv/4.6.0/include/opencv4/
+#INCLUDEPATH += /opt/homebrew/Cellar/opencv/4.6.0/include/opencv4/opencv2/
+#INCLUDEPATH +=/opt/homebrew/Cellar/opencv/4.6.0/include/
+#INCLUDEPATH += /opt/homebrew/Cellar/opencv/4.6.0/include/opencv4/
+#LIBS += /opt/homebrew/Cellar/opencv/4.6.0/lib/libopencv_*
 
-LIBS += /opt/homebrew/Cellar/opencv/4.6.0/lib/libopencv_*
 
-#INCLUDEPATH += C:\OPENCV\make-qt\install\include
-#C:\OPENCV\opencv\opencv\build\include\opencv2
-#C:\OPENCV\opencv\opencv\build\bin
-#LIBS += C:\OPENCV\make-qt\install\x64\mingw\bin\libopencv_*.dll
-#-lopencv_world401
-#-lopencv_world401d
-#LIBS += -lpthread libwsock32 libws2_32
 
-#CONFIG += console
+INCLUDEPATH +=C:\OPENCV\QT-BUILD\install\include
+LIBS += C:\OPENCV\QT-BUILD\install\x64\mingw\lib\libopencv_*.a
 
 
 
