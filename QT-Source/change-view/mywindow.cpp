@@ -5,9 +5,11 @@ MyWindow::MyWindow(QWidget *parent) :
         QMainWindow(parent),
         ui(new Ui::MyWindow) {
 
+    this->setWindowIcon(QIcon(":RUBO1-tou.png"));
 
 
     ui->setupUi(this);
+    setFixedSize(  260,  650);
 
    }
 MyWindow::~MyWindow() {

@@ -30,6 +30,8 @@
 /***********************************RUBO HEADFILE*********************************/
 #include "change-view.h"
 #include "mywindow.h"
+#include "window.h"
+
 using namespace std;
 using namespace cv;
 namespace Ui {
@@ -96,7 +98,6 @@ struct pic_show{
     bool PIC_OPEN;
     bool change;
 };
-extern int screenX,screenY;
 
 extern pic_show pic;
 #if defined(_MSC_VER) && (_MSC_VER >= 1600)

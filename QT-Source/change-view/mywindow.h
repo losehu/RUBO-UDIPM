@@ -1,6 +1,8 @@
 #ifndef MYWINDOW_H
 #define MYWINDOW_H
 #include <QMainWindow>
+#include "window.h"
+
 namespace Ui {
 class MyWindow;
 

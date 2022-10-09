@@ -29,14 +29,16 @@ SOURCES += \
         mainwindow.cpp \
     change-view.cpp \
     mywindow.cpp \
-    rubo_label.cpp
+    rubo_label.cpp \
+    window.cpp
 
 HEADERS += \
         mainwindow.h \
     change-view.h \
     mywindow.h \
     rubo_label.h \
-    ty.h
+    ty.h \
+    window.h
 
 FORMS += \
         mainwindow.ui \

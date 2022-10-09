@@ -3,7 +3,6 @@
 #include "rubo_label.h"
 using namespace std;
 using namespace cv;
-int screenX, screenY;
 pic_show pic;
 MainWindow::MainWindow(QWidget *parent) :
         QMainWindow(parent),

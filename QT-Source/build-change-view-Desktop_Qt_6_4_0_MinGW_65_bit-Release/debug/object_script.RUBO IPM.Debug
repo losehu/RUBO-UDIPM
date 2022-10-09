@@ -1,0 +1,10 @@
+debug/main.o
+debug/mainwindow.o
+debug/change-view.o
+debug/mywindow.o
+debug/rubo_label.o
+debug/window.o
+debug/qrc_rubo.o
+debug/moc_mainwindow.o
+debug/moc_mywindow.o
+debug/moc_rubo_label.o

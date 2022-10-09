@@ -1,0 +1,10 @@
+release/main.o
+release/mainwindow.o
+release/change-view.o
+release/mywindow.o
+release/rubo_label.o
+release/window.o
+release/qrc_rubo.o
+release/moc_mainwindow.o
+release/moc_mywindow.o
+release/moc_rubo_label.o
