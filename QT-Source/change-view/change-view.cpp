@@ -1,5 +1,5 @@
-#include "mainwindow.h"
-#include "ui_mainwindow.h"
+#include "ipm.h"
+#include "ui_ipm.h"
 #include "change-view.h"
 #include <string>
 using namespace std;

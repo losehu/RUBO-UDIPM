@@ -1,7 +1,7 @@
 #ifndef RUBO_LABEL_H
 #define RUBO_LABEL_H
 #include <QLabel>
-#include "mainwindow.h"
+#include "ipm.h"
 
 class MainWindow;
 

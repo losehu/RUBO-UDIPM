@@ -25,24 +25,26 @@ DEFINES += QT_DEPRECATED_WARNINGS
 CONFIG += c++11
 
 SOURCES += \
+    ipm.cpp \
         main.cpp \
-        mainwindow.cpp \
     change-view.cpp \
-    mywindow.cpp \
+    menu.cpp \
     rubo_label.cpp \
     window.cpp
 
 HEADERS += \
-        mainwindow.h \
+    UI/ipm.h \
+    UI/menu.h \
     change-view.h \
-    mywindow.h \
+    ipm.h \
+    menu.h \
     rubo_label.h \
     ty.h \
     window.h
 
 FORMS += \
-        mainwindow.ui \
-        mywindow.ui
+        ipm.ui \
+        menu.ui
 UI_DIR=./UI
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin

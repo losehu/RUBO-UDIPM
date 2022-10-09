@@ -42,10 +42,10 @@ public:
         centralwidget->setObjectName("centralwidget");
         radioButton = new QRadioButton(centralwidget);
         radioButton->setObjectName("radioButton");
-        radioButton->setGeometry(QRect(170, 30, 99, 20));
+        radioButton->setGeometry(QRect(180, 70, 99, 20));
         radioButton_2 = new QRadioButton(centralwidget);
         radioButton_2->setObjectName("radioButton_2");
-        radioButton_2->setGeometry(QRect(170, 130, 99, 20));
+        radioButton_2->setGeometry(QRect(180, 180, 99, 20));
         pushButton = new QPushButton(centralwidget);
         pushButton->setObjectName("pushButton");
         pushButton->setGeometry(QRect(110, 260, 100, 32));
@@ -54,7 +54,7 @@ public:
         toolButton->setGeometry(QRect(50, 90, 26, 22));
         radioButton_3 = new QRadioButton(centralwidget);
         radioButton_3->setObjectName("radioButton_3");
-        radioButton_3->setGeometry(QRect(250, 100, 99, 20));
+        radioButton_3->setGeometry(QRect(180, 120, 99, 20));
         MyWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MyWindow);
         menubar->setObjectName("menubar");
