@@ -28,10 +28,11 @@ class Ui_IpmWindow
 public:
     QAction *open;
     QAction *about;
-    QAction *action_2;
+    QAction *exit;
+    QAction *back;
     QWidget *centralWidget;
     QPushButton *button_openpic;
-    QPushButton *button_change;
+    QPushButton *button_ipm;
     QTextEdit *text_high;
     QLabel *label_high;
     QLabel *label_ysite;
@@ -66,23 +67,25 @@ public:
     {
         if (IpmWindow->objectName().isEmpty())
             IpmWindow->setObjectName("IpmWindow");
-        IpmWindow->resize(1200, 650);
+        IpmWindow->resize(1226, 650);
         IpmWindow->setStyleSheet(QString::fromUtf8("QToolBar{border-color: rgb(0, 0, 0);border:1px solid;}"));
         IpmWindow->setDocumentMode(true);
         open = new QAction(IpmWindow);
         open->setObjectName("open");
         about = new QAction(IpmWindow);
         about->setObjectName("about");
-        action_2 = new QAction(IpmWindow);
-        action_2->setObjectName("action_2");
+        exit = new QAction(IpmWindow);
+        exit->setObjectName("exit");
+        back = new QAction(IpmWindow);
+        back->setObjectName("back");
         centralWidget = new QWidget(IpmWindow);
         centralWidget->setObjectName("centralWidget");
         button_openpic = new QPushButton(centralWidget);
         button_openpic->setObjectName("button_openpic");
         button_openpic->setGeometry(QRect(1050, 460, 93, 28));
-        button_change = new QPushButton(centralWidget);
-        button_change->setObjectName("button_change");
-        button_change->setGeometry(QRect(1050, 500, 93, 28));
+        button_ipm = new QPushButton(centralWidget);
+        button_ipm->setObjectName("button_ipm");
+        button_ipm->setGeometry(QRect(1050, 500, 93, 28));
         text_high = new QTextEdit(centralWidget);
         text_high->setObjectName("text_high");
         text_high->setGeometry(QRect(1100, 70, 60, 30));
@@ -104,6 +107,9 @@ public:
         label_len = new QLabel(centralWidget);
         label_len->setObjectName("label_len");
         label_len->setGeometry(QRect(1000, 180, 141, 16));
+        QFont font;
+        font.setBold(false);
+        label_len->setFont(font);
         text_len = new QTextEdit(centralWidget);
         text_len->setObjectName("text_len");
         text_len->setGeometry(QRect(1100, 170, 60, 30));
@@ -168,7 +174,7 @@ public:
         IpmWindow->setCentralWidget(centralWidget);
         label_pic1->raise();
         button_openpic->raise();
-        button_change->raise();
+        button_ipm->raise();
         text_high->raise();
         label_high->raise();
         label_ysite->raise();
@@ -197,7 +203,7 @@ public:
         label_tips->raise();
         menuBar = new QMenuBar(IpmWindow);
         menuBar->setObjectName("menuBar");
-        menuBar->setGeometry(QRect(0, 0, 1200, 26));
+        menuBar->setGeometry(QRect(0, 0, 1226, 26));
         menu_doc = new QMenu(menuBar);
         menu_doc->setObjectName("menu_doc");
         IpmWindow->setMenuBar(menuBar);
@@ -205,7 +211,8 @@ public:
         menuBar->addAction(menu_doc->menuAction());
         menu_doc->addAction(open);
         menu_doc->addAction(about);
-        menu_doc->addAction(action_2);
+        menu_doc->addAction(back);
+        menu_doc->addAction(exit);
 
         retranslateUi(IpmWindow);
 
@@ -229,12 +236,16 @@ public:
 #if QT_CONFIG(shortcut)
         about->setShortcut(QCoreApplication::translate("IpmWindow", "Ctrl+A", nullptr));
 #endif // QT_CONFIG(shortcut)
-        action_2->setText(QCoreApplication::translate("IpmWindow", "\351\200\200\345\207\272", nullptr));
+        exit->setText(QCoreApplication::translate("IpmWindow", "\351\200\200\345\207\272", nullptr));
 #if QT_CONFIG(shortcut)
-        action_2->setShortcut(QCoreApplication::translate("IpmWindow", "Ctrl+Q", nullptr));
+        exit->setShortcut(QCoreApplication::translate("IpmWindow", "Ctrl+Q", nullptr));
+#endif // QT_CONFIG(shortcut)
+        back->setText(QCoreApplication::translate("IpmWindow", "\350\277\224\345\233\236", nullptr));
+#if QT_CONFIG(shortcut)
+        back->setShortcut(QCoreApplication::translate("IpmWindow", "Ctrl+B", nullptr));
 #endif // QT_CONFIG(shortcut)
         button_openpic->setText(QCoreApplication::translate("IpmWindow", "\346\211\223\345\274\200\345\233\276\347\211\207", nullptr));
-        button_change->setText(QCoreApplication::translate("IpmWindow", "\351\200\217\350\247\206\345\217\230\346\215\242", nullptr));
+        button_ipm->setText(QCoreApplication::translate("IpmWindow", "\351\200\217\350\247\206\345\217\230\346\215\242", nullptr));
         label_high->setText(QCoreApplication::translate("IpmWindow", "\347\273\223\346\236\234\345\233\276\351\253\230\345\272\246\357\274\232", nullptr));
         label_ysite->setText(QCoreApplication::translate("IpmWindow", "\346\226\271\345\275\242\344\270\255\345\277\203\350\267\235\351\241\266\351\203\250\345\203\217\347\264\240\357\274\232", nullptr));
         label_width->setText(QCoreApplication::translate("IpmWindow", "\347\273\223\346\236\234\345\233\276\345\256\275\345\272\246\357\274\232", nullptr));

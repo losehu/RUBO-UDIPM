@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1200</width>
+    <width>1226</width>
     <height>650</height>
    </rect>
   </property>
@@ -33,7 +33,7 @@
      <string>打开图片</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="button_change">
+   <widget class="QPushButton" name="button_ipm">
     <property name="geometry">
      <rect>
       <x>1050</x>
@@ -123,6 +123,11 @@
       <width>141</width>
       <height>16</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <bold>false</bold>
+     </font>
     </property>
     <property name="text">
      <string>方形像素边长：</string>
@@ -366,7 +371,7 @@
    </widget>
    <zorder>label_pic1</zorder>
    <zorder>button_openpic</zorder>
-   <zorder>button_change</zorder>
+   <zorder>button_ipm</zorder>
    <zorder>text_high</zorder>
    <zorder>label_high</zorder>
    <zorder>label_ysite</zorder>
@@ -399,7 +404,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1200</width>
+     <width>1226</width>
      <height>26</height>
     </rect>
    </property>
@@ -409,7 +414,8 @@
     </property>
     <addaction name="open"/>
     <addaction name="about"/>
-    <addaction name="action_2"/>
+    <addaction name="back"/>
+    <addaction name="exit"/>
    </widget>
    <addaction name="menu_doc"/>
   </widget>
@@ -435,12 +441,20 @@
     <string>Ctrl+A</string>
    </property>
   </action>
-  <action name="action_2">
+  <action name="exit">
    <property name="text">
     <string>退出</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="back">
+   <property name="text">
+    <string>返回</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+B</string>
    </property>
   </action>
  </widget>

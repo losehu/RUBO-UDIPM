@@ -6,38 +6,43 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>333</width>
-    <height>222</height>
+    <width>300</width>
+    <height>200</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>RUBO MENU</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QRadioButton" name="radioButton">
+   <widget class="QRadioButton" name="radioButton_ipm">
     <property name="geometry">
      <rect>
       <x>100</x>
       <y>10</y>
-      <width>99</width>
+      <width>130</width>
       <height>20</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <kerning>true</kerning>
+     </font>
+    </property>
     <property name="text">
-     <string>RadioButton</string>
+     <string>逆  透  视</string>
     </property>
    </widget>
-   <widget class="QRadioButton" name="radioButton_2">
+   <widget class="QRadioButton" name="radioButton_udipm">
     <property name="geometry">
      <rect>
       <x>100</x>
-      <y>80</y>
-      <width>99</width>
+      <y>90</y>
+      <width>130</width>
       <height>20</height>
      </rect>
     </property>
     <property name="text">
-     <string>RadioButton</string>
+     <string>去畸变+逆透视</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton">
@@ -50,20 +55,20 @@
      </rect>
     </property>
     <property name="text">
-     <string>PushButton</string>
+     <string>确定</string>
     </property>
    </widget>
-   <widget class="QRadioButton" name="radioButton_3">
+   <widget class="QRadioButton" name="radioButton_udm">
     <property name="geometry">
      <rect>
       <x>100</x>
-      <y>40</y>
-      <width>99</width>
+      <y>50</y>
+      <width>130</width>
       <height>20</height>
      </rect>
     </property>
     <property name="text">
-     <string>RadioButton</string>
+     <string>去  畸  变</string>
     </property>
    </widget>
   </widget>
@@ -72,18 +77,35 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>333</width>
+     <width>300</width>
      <height>26</height>
     </rect>
    </property>
-   <widget class="QMenu" name="menu">
+   <widget class="QMenu" name="menu_doc">
     <property name="title">
      <string>文件</string>
     </property>
+    <addaction name="action_about"/>
+    <addaction name="action_exit"/>
    </widget>
-   <addaction name="menu"/>
+   <addaction name="menu_doc"/>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_about">
+   <property name="text">
+    <string>关于</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
+   </property>
+  </action>
+  <action name="action_exit">
+   <property name="text">
+    <string>退出</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>

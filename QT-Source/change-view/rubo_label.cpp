@@ -44,13 +44,14 @@ void myLabel::mousePressEvent(QMouseEvent *ev)
 //鼠标进入事件
 void myLabel::enterEvent(QEnterEvent *event)
 {
+
     mouse_flag.enter=1;
     
 }
 //鼠标离开事件
-    void myLabel::leaveEvent(QEnterEvent *event)
-    {
+    void myLabel::leaveEvent(QEvent *event)
 
+    {
     mouse_flag.enter=0;
 }
 

@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1091</width>
+    <width>1200</width>
     <height>600</height>
    </rect>
   </property>
@@ -17,10 +17,10 @@
    <widget class="QLabel" name="label_pic1">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>10</y>
-      <width>641</width>
-      <height>481</height>
+      <x>0</x>
+      <y>0</y>
+      <width>940</width>
+      <height>600</height>
      </rect>
     </property>
     <property name="text">
@@ -30,8 +30,8 @@
    <widget class="QLabel" name="label_tips">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>520</y>
+      <x>20</x>
+      <y>550</y>
       <width>811</width>
       <height>20</height>
      </rect>
@@ -43,20 +43,20 @@
    <widget class="QPushButton" name="pushButton_opendir">
     <property name="geometry">
      <rect>
-      <x>900</x>
-      <y>390</y>
+      <x>1040</x>
+      <y>370</y>
       <width>93</width>
       <height>29</height>
      </rect>
     </property>
     <property name="text">
-     <string>打开路径</string>
+     <string>标定图路径</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_openpic">
     <property name="geometry">
      <rect>
-      <x>900</x>
+      <x>1040</x>
       <y>430</y>
       <width>93</width>
       <height>29</height>
@@ -66,18 +66,155 @@
      <string>打开图片</string>
     </property>
    </widget>
+   <widget class="QTextEdit" name="text_width">
+    <property name="geometry">
+     <rect>
+      <x>1100</x>
+      <y>120</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="text_high">
+    <property name="geometry">
+     <rect>
+      <x>1100</x>
+      <y>170</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="text_x">
+    <property name="geometry">
+     <rect>
+      <x>1100</x>
+      <y>220</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="text_y">
+    <property name="geometry">
+     <rect>
+      <x>1100</x>
+      <y>270</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButton_pic">
+    <property name="geometry">
+     <rect>
+      <x>1040</x>
+      <y>60</y>
+      <width>118</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>自动全图</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_width">
+    <property name="geometry">
+     <rect>
+      <x>1000</x>
+      <y>130</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>结果图宽度：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_high">
+    <property name="geometry">
+     <rect>
+      <x>1000</x>
+      <y>180</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>结果图高度：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_x">
+    <property name="geometry">
+     <rect>
+      <x>1000</x>
+      <y>230</y>
+      <width>69</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>水平偏移：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_y">
+    <property name="geometry">
+     <rect>
+      <x>1000</x>
+      <y>280</y>
+      <width>69</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>竖直偏移:</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1091</width>
+     <width>1200</width>
      <height>26</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="action"/>
+    <addaction name="back"/>
+    <addaction name="exit"/>
+   </widget>
+   <addaction name="menu"/>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
+  <action name="back">
+   <property name="text">
+    <string>返回</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+B</string>
+   </property>
+  </action>
+  <action name="exit">
+   <property name="text">
+    <string>退出</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="action">
+   <property name="text">
+    <string>关于</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>

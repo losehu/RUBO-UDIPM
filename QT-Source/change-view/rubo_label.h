@@ -16,7 +16,7 @@ public:
      void enterEvent(QEnterEvent *event);
 
     //鼠标离开事件
-     void leaveEvent(QEnterEvent *event);
+      void leaveEvent(QEvent *event);
 
     void mousePressEvent(QMouseEvent *ev);
 

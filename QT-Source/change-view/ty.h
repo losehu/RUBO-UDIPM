@@ -10,4 +10,7 @@
 #include <vector>
 #include <memory.h>
 #include <dirent.h>
+#include <algorithm>
+#include <QMessageBox>
+
 #endif // TY_H

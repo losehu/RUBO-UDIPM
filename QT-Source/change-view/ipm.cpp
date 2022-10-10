@@ -1,9 +1,15 @@
 #include "ipm.h"
 #include "ui_ipm.h"
 #include "rubo_label.h"
+#include "menu.h"
 using namespace std;
 using namespace cv;
-pic_show pic;
+
+
+void IpmWindow::receiveipm()
+{
+    this->show();
+}
 IpmWindow::IpmWindow(QWidget *parent) :
         QMainWindow(parent),
         ui(new Ui::IpmWindow) {
@@ -50,7 +56,7 @@ void IpmWindow::open_mainwindows_updata_windows() {
     pic.show_width = pic.zoom * init_width;
     pic.show_high = pic.zoom * init_high;
     init_windows(pic.show_width, pic.show_high); //1200--940 600-600
-    ui->button_change->setEnabled(0);
+    ui->button_ipm->setEnabled(0);
     ui->label_tips->setText("请打开图片");
     pic.PIC_OPEN = 0;
     pic.change = 0;
@@ -91,7 +97,7 @@ void IpmWindow::init_model3_windows(int start_x, int start_y) {
     ui->button_clear->setGeometry(start_x + 60, start_y, ui->button_clear->width(), ui->button_clear->height());
     ui->button_openpic->setGeometry(start_x + 60, start_y + 40, ui->button_openpic->width(),
                                     ui->button_openpic->height());
-    ui->button_change->setGeometry(start_x + 60, start_y + 80, ui->button_change->width(), ui->button_change->height());
+    ui->button_ipm->setGeometry(start_x + 60, start_y + 80, ui->button_ipm->width(), ui->button_ipm->height());
 }
 void IpmWindow::init_model4_windows(int start_x, int start_y) {
     ui->label_pic1->setGeometry(start_x, start_y, ui->label_pic1->width(), ui->label_pic1->height());
@@ -157,7 +163,7 @@ void IpmWindow::on_button_openpic_clicked() {
     init_para();
     on_button_clear_clicked();
     ui->label_pic1->setPixmap(QPixmap::fromImage(img.scaled(ui->label_pic1->size())));
-    ui->button_change->setEnabled(1);
+    ui->button_ipm->setEnabled(1);
     active_windows();
 }
 void IpmWindow::on_button_clear_clicked() {
@@ -224,7 +230,7 @@ void IpmWindow::timerUpdate() { /* 定时器溢出处理 */
         ui->label_tips->setText("用鼠标右键点击,从方形左下-右下-左上-右上选取四个点");
     }
 }
-void IpmWindow::on_button_change_clicked() {
+void IpmWindow::on_button_ipm_clicked() {
     QString num_tmp;
     /**********************结果图基本信息***********************/
     num_tmp = ui->text_width->toPlainText();
@@ -268,23 +274,24 @@ void IpmWindow::on_button_change_clicked() {
     change_view();
     pic.change = 1;
 }
-void IpmWindow::on_action_2_triggered() {
-    qApp->quit();
-}
+
 void IpmWindow::on_about_triggered() {
-    QMessageBox MBox;
-    MBox.setWindowTitle("About RUBO IPM");
-    MBox.setText("RUBO IPM 1.4.0");
-    MBox.setInformativeText(
-            "Based on Qt 6.3.1 (Clang 13.0螢幕截圖 2022-10-08 下午8.17.39 (Apple), arm64)\n\nBuilt on Oct 7 2022 19:15:33\n\nFrom revision 1.4.0\n\nChecked by RUBO\n\nTHIS PROGRAM IS ONLY PROVIDED FOR LEARNING AND\nCOMMUNICATION, AND HAS NOTHING TO DOWITH ANY\nSCHOOL OR ORGANIZATION. ANY FORM OF COMMERCIAL\nUSE IS PROHIBITED.");
-    MBox.setIconPixmap(QPixmap(":RUBO1-small.png"));
-    QPushButton *agreeBut = MBox.addButton("Close", QMessageBox::AcceptRole);
-    MBox.exec();
+show_about();
 }
 void IpmWindow::on_open_triggered() {
     on_button_openpic_clicked();
 }
 
 
+void IpmWindow::on_exit_triggered() {
+IpmWindow::close();
 
+}
+
+
+void IpmWindow::on_back_triggered()
+{
+    this->hide();//隐藏test窗口
+      emit menushow();
+}
 

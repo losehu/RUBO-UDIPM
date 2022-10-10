@@ -70,9 +70,9 @@ private slots:
     void timerUpdate();
 
 
-    void on_action_2_triggered();
+    void on_exit_triggered();
 
-    void on_button_change_clicked();
+    void on_button_ipm_clicked();
 
 
     void on_about_triggered();
@@ -84,21 +84,16 @@ private slots:
 private:
     int id1;
     MenuWindow menuw;
+private slots:
+     void receiveipm();
+     void on_back_triggered();
+
+signals:
+    void menushow();
 
 
 };
-struct pic_show{
-    int width;
-    int high;
-    int show_width;
-    int show_high;
-    float zoom;
-    int click_cnt;
-    bool PIC_OPEN;
-    bool change;
-};
 
-extern pic_show pic;
 #if defined(_MSC_VER) && (_MSC_VER >= 1600)
 # pragma execution_character_set("utf-8")
 #endif

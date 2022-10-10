@@ -1,6 +1,10 @@
 #include "ui_udipm.h"
 #include "udipm.h"
 #include "QMessageBox"
+void UdipmWindow::receiveudipm()
+{
+    this->show();
+}
 UdipmWindow::UdipmWindow(QWidget *parent) :
         QMainWindow(parent),
         ui(new Ui::UdipmWindow) {
@@ -17,4 +21,24 @@ UdipmWindow::~UdipmWindow() {
 }
 
 
+
+
+void UdipmWindow::on_back_triggered()
+{
+    this->hide();//隐藏test窗口
+
+    menushow();
+}
+
+
+void UdipmWindow::on_exit_triggered()
+{
+    UdipmWindow::close();
+}
+
+
+void UdipmWindow::on_action_triggered()
+{
+    show_about();
+}
 

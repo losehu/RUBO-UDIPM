@@ -16,7 +16,16 @@ public:
     ~UdipmWindow();
 public:
     Ui::UdipmWindow *ui;
+private slots:
+     void receiveudipm();
+     void on_back_triggered();
 
+     void on_exit_triggered();
+
+     void on_action_triggered();
+
+signals:
+    void menushow();
 };
 
 

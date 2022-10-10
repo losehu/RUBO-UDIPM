@@ -1,6 +1,15 @@
 #include "ui_menu.h"
 #include "menu.h"
 #include "QMessageBox"
+#include "ty.h"
+#include "udm.h"
+#include "udipm.h"
+#include "ipm.h"
+
+void MenuWindow::receivemenu()
+{
+    this->show();
+}
 MenuWindow::MenuWindow(QWidget *parent) :
         QMainWindow(parent),
         ui(new Ui::MenuWindow) {
@@ -9,7 +18,8 @@ MenuWindow::MenuWindow(QWidget *parent) :
 
 
     ui->setupUi(this);
-//    setFixedSize(  screenX/4,  screenY/4);
+
+    setFixedSize( 300,200);
 
    }
 MenuWindow::~MenuWindow() {
@@ -18,7 +28,38 @@ MenuWindow::~MenuWindow() {
 
 void MenuWindow::on_pushButton_clicked()
 {
-    QMessageBox::information(this, tr("打开图像失败"), tr("打开图像失败!"));
 
+    if(ui->radioButton_ipm->isChecked()){
+
+            this->hide();//隐藏test窗口
+            emit ipmshow();
+    } else if(ui->radioButton_udm->isChecked()){
+
+
+            this->hide();//隐藏test窗口
+            emit udmshow();
+    }else if(ui->radioButton_udipm->isChecked())
+    {
+
+            this->hide();//隐藏test窗口
+            emit udipmshow();
+    }else
+    {
+        QMessageBox::information(this, tr("错误"), tr("请选择图像处理方案!"));
+    }
+
+
+}
+
+
+void MenuWindow::on_action_about_triggered()
+{
+   show_about();
+}
+
+
+void MenuWindow::on_action_exit_triggered()
+{
+    MenuWindow::close();
 }
 

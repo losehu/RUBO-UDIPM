@@ -3,6 +3,7 @@
 #include <QMainWindow>
 #include "screen.h"
 
+using namespace std;
 namespace Ui {
 class MenuWindow;
 
@@ -18,7 +19,17 @@ public:
 
 
 private slots:
+
+    void receivemenu();
+
     void on_pushButton_clicked();
+    void on_action_about_triggered();
+    void on_action_exit_triggered();
+signals:
+    void ipmshow();
+    void udmshow();
+    void udipmshow();
+
 };
 
 #endif // MENU_H

@@ -405,6 +405,9 @@ release/moc_ipm.cpp: ipm.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/qpicture.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/qtextdocument.h \
 		ty.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QMessageBox \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qmessagebox.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qdialog.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qtimer.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qbasictimer.h \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qfiledialog.h \
@@ -415,13 +418,10 @@ release/moc_ipm.cpp: ipm.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qdatetime.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qcalendar.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qlocale.h \
-		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qdialog.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QImage \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QKeyEvent \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QPixmap \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QFileDialog \
-		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QMessageBox \
-		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qmessagebox.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QScreen \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QGuiApplication \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/qguiapplication.h \
@@ -611,6 +611,113 @@ release/moc_menu.cpp: menu.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qnativeinterface.h \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qtabwidget.h \
 		screen.h \
+		ty.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/opencv.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/opencv_modules.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/cvdef.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/version.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/hal/interface.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/cv_cpu_dispatch.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/cv_cpu_helper.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/hal/msa_macros.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/fast_math.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/base.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/cvstd.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/cvstd_wrapper.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/neon_utils.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/vsx_utils.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/check.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/traits.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/matx.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/saturate.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/types.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/mat.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/bufferpool.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/mat.inl.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/persistence.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/operations.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/cvstd.inl.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/utility.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/utils/instrumentation.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/utils/tls.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/optim.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/ovx.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/calib3d.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/features2d.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/miniflann.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/defines.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/config.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/affine.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/dnn.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/dnn/dnn.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/async.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/dnn/version.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/dnn/dict.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/dnn/layer.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/dnn/dnn.inl.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/dnn/utils/inference_engine.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/flann_base.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/general.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/matrix.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/params.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/any.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/saving.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/nn_index.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/result_set.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/all_indices.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/kdtree_index.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/dynamic_bitset.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/dist.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/heap.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/allocator.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/random.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/kdtree_single_index.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/kmeans_index.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/logger.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/composite_index.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/linear_index.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/hierarchical_clustering_index.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/lsh_index.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/lsh_table.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/autotuned_index.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/ground_truth.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/index_testing.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/timer.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/sampling.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/highgui.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/imgcodecs.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/videoio.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/imgproc.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/imgproc/segmentation.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/ml.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/ml/ml.inl.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/objdetect.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/objdetect/detection_based_tracker.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/objdetect/face.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/photo.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching/warpers.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching/detail/warpers.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/cuda.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/cuda_types.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/cuda.inl.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching/detail/warpers_inl.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching/detail/matchers.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching/detail/motion_estimators.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching/detail/util.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching/detail/util_inl.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching/detail/camera.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching/detail/exposure_compensate.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching/detail/seam_finders.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching/detail/blenders.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/video.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/video/tracking.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/video/background_segm.hpp \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QMessageBox \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qmessagebox.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qdialog.h \
 		release/moc_predefs.h \
 		C:/Qt/6.4.0/mingw_64/bin/moc.exe
 	C:\Qt\6.4.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/RUPC/Desktop/github/RUBO-IPM/QT-Source/change-view/release/moc_predefs.h -IC:/Qt/6.4.0/mingw_64/mkspecs/win32-g++ -IC:/Users/RUPC/Desktop/github/RUBO-IPM/QT-Source/change-view -IC:/OPENCV/QT-BUILD/install/include -IC:/Qt/6.4.0/mingw_64/include -IC:/Qt/6.4.0/mingw_64/include/QtWidgets -IC:/Qt/6.4.0/mingw_64/include/QtGui -IC:/Qt/6.4.0/mingw_64/include/QtCore -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include menu.h -o release\moc_menu.cpp
@@ -863,6 +970,9 @@ release/moc_rubo_label.cpp: rubo_label.h \
 		C:/OPENCV/QT-BUILD/install/include/opencv2/video/tracking.hpp \
 		C:/OPENCV/QT-BUILD/install/include/opencv2/video/background_segm.hpp \
 		ty.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QMessageBox \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qmessagebox.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qdialog.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qtimer.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qbasictimer.h \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qfiledialog.h \
@@ -873,13 +983,10 @@ release/moc_rubo_label.cpp: rubo_label.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qdatetime.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qcalendar.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qlocale.h \
-		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qdialog.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QImage \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QKeyEvent \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QPixmap \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QFileDialog \
-		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QMessageBox \
-		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qmessagebox.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QScreen \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QGuiApplication \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/qguiapplication.h \
@@ -1069,6 +1176,113 @@ release/moc_udipm.cpp: udipm.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qnativeinterface.h \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qtabwidget.h \
 		screen.h \
+		ty.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/opencv.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/opencv_modules.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/cvdef.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/version.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/hal/interface.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/cv_cpu_dispatch.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/cv_cpu_helper.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/hal/msa_macros.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/fast_math.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/base.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/cvstd.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/cvstd_wrapper.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/neon_utils.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/vsx_utils.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/check.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/traits.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/matx.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/saturate.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/types.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/mat.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/bufferpool.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/mat.inl.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/persistence.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/operations.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/cvstd.inl.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/utility.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/utils/instrumentation.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/utils/tls.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/optim.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/ovx.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/calib3d.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/features2d.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/miniflann.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/defines.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/config.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/affine.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/dnn.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/dnn/dnn.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/async.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/dnn/version.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/dnn/dict.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/dnn/layer.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/dnn/dnn.inl.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/dnn/utils/inference_engine.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/flann_base.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/general.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/matrix.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/params.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/any.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/saving.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/nn_index.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/result_set.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/all_indices.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/kdtree_index.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/dynamic_bitset.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/dist.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/heap.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/allocator.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/random.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/kdtree_single_index.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/kmeans_index.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/logger.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/composite_index.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/linear_index.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/hierarchical_clustering_index.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/lsh_index.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/lsh_table.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/autotuned_index.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/ground_truth.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/index_testing.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/timer.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/sampling.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/highgui.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/imgcodecs.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/videoio.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/imgproc.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/imgproc/segmentation.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/ml.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/ml/ml.inl.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/objdetect.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/objdetect/detection_based_tracker.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/objdetect/face.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/photo.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching/warpers.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching/detail/warpers.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/cuda.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/cuda_types.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/cuda.inl.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching/detail/warpers_inl.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching/detail/matchers.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching/detail/motion_estimators.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching/detail/util.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching/detail/util_inl.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching/detail/camera.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching/detail/exposure_compensate.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching/detail/seam_finders.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching/detail/blenders.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/video.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/video/tracking.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/video/background_segm.hpp \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QMessageBox \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qmessagebox.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qdialog.h \
 		release/moc_predefs.h \
 		C:/Qt/6.4.0/mingw_64/bin/moc.exe
 	C:\Qt\6.4.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/RUPC/Desktop/github/RUBO-IPM/QT-Source/change-view/release/moc_predefs.h -IC:/Qt/6.4.0/mingw_64/mkspecs/win32-g++ -IC:/Users/RUPC/Desktop/github/RUBO-IPM/QT-Source/change-view -IC:/OPENCV/QT-BUILD/install/include -IC:/Qt/6.4.0/mingw_64/include -IC:/Qt/6.4.0/mingw_64/include/QtWidgets -IC:/Qt/6.4.0/mingw_64/include/QtGui -IC:/Qt/6.4.0/mingw_64/include/QtCore -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include udipm.h -o release\moc_udipm.cpp
@@ -1212,6 +1426,113 @@ release/moc_udm.cpp: udm.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qnativeinterface.h \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qtabwidget.h \
 		screen.h \
+		ty.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/opencv.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/opencv_modules.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/cvdef.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/version.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/hal/interface.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/cv_cpu_dispatch.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/cv_cpu_helper.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/hal/msa_macros.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/fast_math.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/base.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/cvstd.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/cvstd_wrapper.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/neon_utils.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/vsx_utils.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/check.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/traits.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/matx.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/saturate.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/types.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/mat.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/bufferpool.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/mat.inl.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/persistence.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/operations.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/cvstd.inl.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/utility.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/utils/instrumentation.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/utils/tls.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/optim.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/ovx.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/calib3d.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/features2d.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/miniflann.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/defines.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/config.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/affine.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/dnn.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/dnn/dnn.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/async.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/dnn/version.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/dnn/dict.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/dnn/layer.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/dnn/dnn.inl.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/dnn/utils/inference_engine.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/flann_base.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/general.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/matrix.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/params.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/any.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/saving.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/nn_index.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/result_set.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/all_indices.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/kdtree_index.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/dynamic_bitset.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/dist.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/heap.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/allocator.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/random.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/kdtree_single_index.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/kmeans_index.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/logger.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/composite_index.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/linear_index.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/hierarchical_clustering_index.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/lsh_index.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/lsh_table.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/autotuned_index.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/ground_truth.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/index_testing.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/timer.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/sampling.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/highgui.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/imgcodecs.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/videoio.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/imgproc.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/imgproc/segmentation.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/ml.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/ml/ml.inl.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/objdetect.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/objdetect/detection_based_tracker.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/objdetect/face.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/photo.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching/warpers.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching/detail/warpers.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/cuda.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/cuda_types.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/cuda.inl.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching/detail/warpers_inl.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching/detail/matchers.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching/detail/motion_estimators.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching/detail/util.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching/detail/util_inl.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching/detail/camera.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching/detail/exposure_compensate.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching/detail/seam_finders.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching/detail/blenders.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/video.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/video/tracking.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/video/background_segm.hpp \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QMessageBox \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qmessagebox.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qdialog.h \
 		release/moc_predefs.h \
 		C:/Qt/6.4.0/mingw_64/bin/moc.exe
 	C:\Qt\6.4.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/RUPC/Desktop/github/RUBO-IPM/QT-Source/change-view/release/moc_predefs.h -IC:/Qt/6.4.0/mingw_64/mkspecs/win32-g++ -IC:/Users/RUPC/Desktop/github/RUBO-IPM/QT-Source/change-view -IC:/OPENCV/QT-BUILD/install/include -IC:/Qt/6.4.0/mingw_64/include -IC:/Qt/6.4.0/mingw_64/include/QtWidgets -IC:/Qt/6.4.0/mingw_64/include/QtGui -IC:/Qt/6.4.0/mingw_64/include/QtCore -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include udm.h -o release\moc_udm.cpp
@@ -1473,6 +1794,9 @@ UI/ui_ipm.h: ipm.ui \
 		C:/OPENCV/QT-BUILD/install/include/opencv2/video/tracking.hpp \
 		C:/OPENCV/QT-BUILD/install/include/opencv2/video/background_segm.hpp \
 		ty.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QMessageBox \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qmessagebox.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qdialog.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qtimer.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qbasictimer.h \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qfiledialog.h \
@@ -1483,13 +1807,10 @@ UI/ui_ipm.h: ipm.ui \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qdatetime.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qcalendar.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qlocale.h \
-		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qdialog.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QImage \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QKeyEvent \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QPixmap \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QFileDialog \
-		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QMessageBox \
-		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qmessagebox.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QScreen \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QGuiApplication \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/qguiapplication.h \
@@ -1808,6 +2129,9 @@ release/ipm.o: ipm.cpp ipm.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/qpicture.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/qtextdocument.h \
 		ty.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QMessageBox \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qmessagebox.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qdialog.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qtimer.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qbasictimer.h \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qfiledialog.h \
@@ -1818,13 +2142,10 @@ release/ipm.o: ipm.cpp ipm.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qdatetime.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qcalendar.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qlocale.h \
-		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qdialog.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QImage \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QKeyEvent \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QPixmap \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QFileDialog \
-		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QMessageBox \
-		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qmessagebox.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QScreen \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QGuiApplication \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/qguiapplication.h \
@@ -1876,9 +2197,8 @@ release/ipm.o: ipm.cpp ipm.h \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QLabel
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\ipm.o ipm.cpp
 
-release/main.o: main.cpp ipm.h \
-		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QMainWindow \
-		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qmainwindow.h \
+release/main.o: main.cpp C:/Qt/6.4.0/mingw_64/include/QtWidgets/QApplication \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qapplication.h \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/qtguiglobal.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qglobal.h \
@@ -1909,19 +2229,14 @@ release/main.o: main.cpp ipm.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/qtguiexports.h \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qtwidgets-config.h \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qtwidgetsexports.h \
-		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qwidget.h \
-		C:/Qt/6.4.0/mingw_64/include/QtGui/qwindowdefs.h \
-		C:/Qt/6.4.0/mingw_64/include/QtCore/qobjectdefs.h \
-		C:/Qt/6.4.0/mingw_64/include/QtCore/qnamespace.h \
-		C:/Qt/6.4.0/mingw_64/include/QtCore/qtmetamacros.h \
-		C:/Qt/6.4.0/mingw_64/include/QtCore/qobjectdefs_impl.h \
-		C:/Qt/6.4.0/mingw_64/include/QtGui/qwindowdefs_win.h \
-		C:/Qt/6.4.0/mingw_64/include/QtCore/qobject.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qcoreapplication.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qstring.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qchar.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qstringview.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qbytearray.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qrefcount.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qnamespace.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qtmetamacros.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qarraydata.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qpair.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qarraydatapointer.h \
@@ -1936,6 +2251,11 @@ release/main.o: main.cpp ipm.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qutf8stringview.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qstringtokenizer.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qstringbuilder.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qcoreevent.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qobjectdefs.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qobjectdefs_impl.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qeventloop.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qobject.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qlist.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qhashfunctions.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qiterator.h \
@@ -1943,7 +2263,6 @@ release/main.o: main.cpp ipm.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qstringlist.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qalgorithms.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qstringmatcher.h \
-		C:/Qt/6.4.0/mingw_64/include/QtCore/qcoreevent.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qscopedpointer.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qmetatype.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qcompare.h \
@@ -1957,63 +2276,61 @@ release/main.o: main.cpp ipm.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qmath.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qobject_impl.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qbindingstorage.h \
-		C:/Qt/6.4.0/mingw_64/include/QtCore/qmargins.h \
-		C:/Qt/6.4.0/mingw_64/include/QtGui/qaction.h \
-		C:/Qt/6.4.0/mingw_64/include/QtGui/qkeysequence.h \
-		C:/Qt/6.4.0/mingw_64/include/QtGui/qicon.h \
-		C:/Qt/6.4.0/mingw_64/include/QtCore/qsize.h \
-		C:/Qt/6.4.0/mingw_64/include/QtGui/qpixmap.h \
-		C:/Qt/6.4.0/mingw_64/include/QtGui/qpaintdevice.h \
-		C:/Qt/6.4.0/mingw_64/include/QtCore/qrect.h \
-		C:/Qt/6.4.0/mingw_64/include/QtCore/qpoint.h \
-		C:/Qt/6.4.0/mingw_64/include/QtGui/qcolor.h \
-		C:/Qt/6.4.0/mingw_64/include/QtGui/qrgb.h \
-		C:/Qt/6.4.0/mingw_64/include/QtGui/qrgba64.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qnativeinterface.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qdebug.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qtextstream.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qstringconverter_base.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qcontiguouscache.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qsharedpointer.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qshareddata.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qsharedpointer_impl.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qmap.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qshareddata_impl.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qset.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qhash.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qvarlengtharray.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qcoreapplication_platform.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qjnitypes.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qfuture.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qfutureinterface.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qmutex.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qtsan_impl.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qresultstore.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qfuture_impl.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qthreadpool.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qthread.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qdeadlinetimer.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qelapsedtimer.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qrunnable.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qexception.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qpointer.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qpromise.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qvariant.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qwindowdefs.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qwindowdefs_win.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qpoint.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qsize.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qmargins.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qcursor.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qbitmap.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qpixmap.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qpaintdevice.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qrect.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qcolor.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qrgb.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qrgba64.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/qimage.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/qpixelformat.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/qtransform.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/qpolygon.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/qregion.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qline.h \
-		C:/Qt/6.4.0/mingw_64/include/QtCore/qvariant.h \
-		C:/Qt/6.4.0/mingw_64/include/QtCore/qdebug.h \
-		C:/Qt/6.4.0/mingw_64/include/QtCore/qtextstream.h \
-		C:/Qt/6.4.0/mingw_64/include/QtCore/qstringconverter_base.h \
-		C:/Qt/6.4.0/mingw_64/include/QtCore/qcontiguouscache.h \
-		C:/Qt/6.4.0/mingw_64/include/QtCore/qmap.h \
-		C:/Qt/6.4.0/mingw_64/include/QtCore/qshareddata_impl.h \
-		C:/Qt/6.4.0/mingw_64/include/QtCore/qset.h \
-		C:/Qt/6.4.0/mingw_64/include/QtCore/qhash.h \
-		C:/Qt/6.4.0/mingw_64/include/QtCore/qvarlengtharray.h \
-		C:/Qt/6.4.0/mingw_64/include/QtGui/qpalette.h \
-		C:/Qt/6.4.0/mingw_64/include/QtGui/qbrush.h \
-		C:/Qt/6.4.0/mingw_64/include/QtGui/qfont.h \
-		C:/Qt/6.4.0/mingw_64/include/QtGui/qfontmetrics.h \
-		C:/Qt/6.4.0/mingw_64/include/QtGui/qfontinfo.h \
-		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qsizepolicy.h \
-		C:/Qt/6.4.0/mingw_64/include/QtGui/qcursor.h \
-		C:/Qt/6.4.0/mingw_64/include/QtGui/qbitmap.h \
-		C:/Qt/6.4.0/mingw_64/include/QtGui/qevent.h \
-		C:/Qt/6.4.0/mingw_64/include/QtCore/qiodevice.h \
-		C:/Qt/6.4.0/mingw_64/include/QtCore/qpointer.h \
-		C:/Qt/6.4.0/mingw_64/include/QtCore/qurl.h \
-		C:/Qt/6.4.0/mingw_64/include/QtGui/qeventpoint.h \
-		C:/Qt/6.4.0/mingw_64/include/QtGui/qvector2d.h \
-		C:/Qt/6.4.0/mingw_64/include/QtGui/qvectornd.h \
-		C:/Qt/6.4.0/mingw_64/include/QtGui/qpointingdevice.h \
-		C:/Qt/6.4.0/mingw_64/include/QtGui/qinputdevice.h \
-		C:/Qt/6.4.0/mingw_64/include/QtGui/qscreen.h \
-		C:/Qt/6.4.0/mingw_64/include/QtCore/QList \
-		C:/Qt/6.4.0/mingw_64/include/QtCore/QObject \
-		C:/Qt/6.4.0/mingw_64/include/QtCore/QRect \
-		C:/Qt/6.4.0/mingw_64/include/QtCore/QSize \
-		C:/Qt/6.4.0/mingw_64/include/QtCore/QSizeF \
-		C:/Qt/6.4.0/mingw_64/include/QtGui/QTransform \
-		C:/Qt/6.4.0/mingw_64/include/QtCore/qnativeinterface.h \
-		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qtabwidget.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qguiapplication.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qinputmethod.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qlocale.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qguiapplication_platform.h \
+		screen.h \
+		ty.h \
 		C:/OPENCV/QT-BUILD/install/include/opencv2/opencv.hpp \
 		C:/OPENCV/QT-BUILD/install/include/opencv2/opencv_modules.hpp \
 		C:/OPENCV/QT-BUILD/install/include/opencv2/core.hpp \
@@ -2117,11 +2434,42 @@ release/main.o: main.cpp ipm.h \
 		C:/OPENCV/QT-BUILD/install/include/opencv2/video.hpp \
 		C:/OPENCV/QT-BUILD/install/include/opencv2/video/tracking.hpp \
 		C:/OPENCV/QT-BUILD/install/include/opencv2/video/background_segm.hpp \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QMessageBox \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qmessagebox.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qdialog.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qwidget.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qaction.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qkeysequence.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qicon.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qpalette.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qbrush.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qfont.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qfontmetrics.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qfontinfo.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qsizepolicy.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qevent.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qiodevice.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qurl.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qeventpoint.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qvector2d.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qvectornd.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qpointingdevice.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qinputdevice.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qscreen.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/QList \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/QObject \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/QRect \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/QSize \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/QSizeF \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/QTransform \
+		ipm.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QMainWindow \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qmainwindow.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qtabwidget.h \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qlabel.h \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qframe.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/qpicture.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/qtextdocument.h \
-		ty.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qtimer.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qbasictimer.h \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qfiledialog.h \
@@ -2131,36 +2479,12 @@ release/main.o: main.cpp ipm.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qfileinfo.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qdatetime.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qcalendar.h \
-		C:/Qt/6.4.0/mingw_64/include/QtCore/qlocale.h \
-		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qdialog.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QImage \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QKeyEvent \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QPixmap \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QFileDialog \
-		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QMessageBox \
-		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qmessagebox.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QScreen \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QGuiApplication \
-		C:/Qt/6.4.0/mingw_64/include/QtGui/qguiapplication.h \
-		C:/Qt/6.4.0/mingw_64/include/QtCore/qcoreapplication.h \
-		C:/Qt/6.4.0/mingw_64/include/QtCore/qeventloop.h \
-		C:/Qt/6.4.0/mingw_64/include/QtCore/qcoreapplication_platform.h \
-		C:/Qt/6.4.0/mingw_64/include/QtCore/qjnitypes.h \
-		C:/Qt/6.4.0/mingw_64/include/QtCore/qfuture.h \
-		C:/Qt/6.4.0/mingw_64/include/QtCore/qfutureinterface.h \
-		C:/Qt/6.4.0/mingw_64/include/QtCore/qmutex.h \
-		C:/Qt/6.4.0/mingw_64/include/QtCore/qtsan_impl.h \
-		C:/Qt/6.4.0/mingw_64/include/QtCore/qresultstore.h \
-		C:/Qt/6.4.0/mingw_64/include/QtCore/qfuture_impl.h \
-		C:/Qt/6.4.0/mingw_64/include/QtCore/qthreadpool.h \
-		C:/Qt/6.4.0/mingw_64/include/QtCore/qthread.h \
-		C:/Qt/6.4.0/mingw_64/include/QtCore/qdeadlinetimer.h \
-		C:/Qt/6.4.0/mingw_64/include/QtCore/qelapsedtimer.h \
-		C:/Qt/6.4.0/mingw_64/include/QtCore/qrunnable.h \
-		C:/Qt/6.4.0/mingw_64/include/QtCore/qexception.h \
-		C:/Qt/6.4.0/mingw_64/include/QtCore/qpromise.h \
-		C:/Qt/6.4.0/mingw_64/include/QtGui/qinputmethod.h \
-		C:/Qt/6.4.0/mingw_64/include/QtGui/qguiapplication_platform.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/QTimer \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/QTime \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/QDebug \
@@ -2171,8 +2495,6 @@ release/main.o: main.cpp ipm.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qregularexpression.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QClipboard \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/qclipboard.h \
-		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QApplication \
-		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qapplication.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/QMimeData \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qmimedata.h \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QTextEdit \
@@ -2184,7 +2506,6 @@ release/main.o: main.cpp ipm.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/qpen.h \
 		change-view.h \
 		menu.h \
-		screen.h \
 		udm.h \
 		udipm.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\main.o main.cpp
@@ -2435,6 +2756,9 @@ release/change-view.o: change-view.cpp ipm.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/qpicture.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/qtextdocument.h \
 		ty.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QMessageBox \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qmessagebox.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qdialog.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qtimer.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qbasictimer.h \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qfiledialog.h \
@@ -2445,13 +2769,10 @@ release/change-view.o: change-view.cpp ipm.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qdatetime.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qcalendar.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qlocale.h \
-		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qdialog.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QImage \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QKeyEvent \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QPixmap \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QFileDialog \
-		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QMessageBox \
-		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qmessagebox.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QScreen \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QGuiApplication \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/qguiapplication.h \
@@ -2641,9 +2962,178 @@ release/menu.o: menu.cpp UI/ui_menu.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qnativeinterface.h \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qtabwidget.h \
 		screen.h \
+		ty.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/opencv.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/opencv_modules.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/cvdef.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/version.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/hal/interface.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/cv_cpu_dispatch.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/cv_cpu_helper.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/hal/msa_macros.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/fast_math.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/base.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/cvstd.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/cvstd_wrapper.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/neon_utils.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/vsx_utils.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/check.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/traits.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/matx.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/saturate.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/types.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/mat.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/bufferpool.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/mat.inl.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/persistence.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/operations.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/cvstd.inl.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/utility.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/utils/instrumentation.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/utils/tls.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/optim.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/ovx.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/calib3d.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/features2d.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/miniflann.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/defines.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/config.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/affine.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/dnn.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/dnn/dnn.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/async.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/dnn/version.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/dnn/dict.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/dnn/layer.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/dnn/dnn.inl.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/dnn/utils/inference_engine.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/flann_base.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/general.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/matrix.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/params.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/any.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/saving.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/nn_index.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/result_set.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/all_indices.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/kdtree_index.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/dynamic_bitset.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/dist.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/heap.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/allocator.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/random.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/kdtree_single_index.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/kmeans_index.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/logger.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/composite_index.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/linear_index.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/hierarchical_clustering_index.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/lsh_index.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/lsh_table.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/autotuned_index.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/ground_truth.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/index_testing.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/timer.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/sampling.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/highgui.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/imgcodecs.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/videoio.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/imgproc.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/imgproc/segmentation.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/ml.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/ml/ml.inl.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/objdetect.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/objdetect/detection_based_tracker.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/objdetect/face.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/photo.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching/warpers.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching/detail/warpers.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/cuda.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/cuda_types.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/cuda.inl.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching/detail/warpers_inl.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching/detail/matchers.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching/detail/motion_estimators.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching/detail/util.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching/detail/util_inl.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching/detail/camera.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching/detail/exposure_compensate.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching/detail/seam_finders.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching/detail/blenders.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/video.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/video/tracking.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/video/background_segm.hpp \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QMessageBox \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qmessagebox.h \
-		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qdialog.h
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qdialog.h \
+		udm.h \
+		udipm.h \
+		ipm.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qframe.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qpicture.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qtimer.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qbasictimer.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qfiledialog.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qdir.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qfile.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qfiledevice.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qfileinfo.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qdatetime.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qcalendar.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qlocale.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/QImage \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/QKeyEvent \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/QPixmap \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QFileDialog \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/QScreen \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/QGuiApplication \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qguiapplication.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qcoreapplication.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qeventloop.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qcoreapplication_platform.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qjnitypes.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qfuture.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qfutureinterface.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qmutex.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qtsan_impl.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qresultstore.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qfuture_impl.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qthreadpool.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qthread.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qdeadlinetimer.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qelapsedtimer.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qrunnable.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qexception.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qpromise.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qinputmethod.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qguiapplication_platform.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/QTimer \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/QTime \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/QDebug \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/QLoggingCategory \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qloggingcategory.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/QIntValidator \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qvalidator.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qregularexpression.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/QClipboard \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qclipboard.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QApplication \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qapplication.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/QMimeData \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qmimedata.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QTextEdit \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qtextedit.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qtextoption.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qtextcursor.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qtextformat.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qpen.h \
+		change-view.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\menu.o menu.cpp
 
 release/rubo_label.o: rubo_label.cpp ipm.h \
@@ -2892,6 +3382,9 @@ release/rubo_label.o: rubo_label.cpp ipm.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/qpicture.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/qtextdocument.h \
 		ty.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QMessageBox \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qmessagebox.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qdialog.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qtimer.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qbasictimer.h \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qfiledialog.h \
@@ -2902,13 +3395,10 @@ release/rubo_label.o: rubo_label.cpp ipm.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qdatetime.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qcalendar.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qlocale.h \
-		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qdialog.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QImage \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QKeyEvent \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QPixmap \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QFileDialog \
-		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QMessageBox \
-		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qmessagebox.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QScreen \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QGuiApplication \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/qguiapplication.h \
@@ -2959,7 +3449,248 @@ release/rubo_label.o: rubo_label.cpp ipm.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QMouseEvent
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\rubo_label.o rubo_label.cpp
 
-release/screen.o: screen.cpp screen.h
+release/screen.o: screen.cpp screen.h \
+		ty.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/opencv.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/opencv_modules.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/cvdef.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/version.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/hal/interface.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/cv_cpu_dispatch.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/cv_cpu_helper.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/hal/msa_macros.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/fast_math.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/base.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/cvstd.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/cvstd_wrapper.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/neon_utils.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/vsx_utils.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/check.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/traits.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/matx.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/saturate.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/types.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/mat.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/bufferpool.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/mat.inl.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/persistence.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/operations.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/cvstd.inl.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/utility.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/utils/instrumentation.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/utils/tls.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/optim.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/ovx.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/calib3d.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/features2d.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/miniflann.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/defines.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/config.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/affine.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/dnn.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/dnn/dnn.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/async.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/dnn/version.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/dnn/dict.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/dnn/layer.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/dnn/dnn.inl.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/dnn/utils/inference_engine.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/flann_base.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/general.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/matrix.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/params.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/any.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/saving.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/nn_index.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/result_set.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/all_indices.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/kdtree_index.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/dynamic_bitset.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/dist.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/heap.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/allocator.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/random.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/kdtree_single_index.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/kmeans_index.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/logger.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/composite_index.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/linear_index.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/hierarchical_clustering_index.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/lsh_index.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/lsh_table.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/autotuned_index.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/ground_truth.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/index_testing.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/timer.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/sampling.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/highgui.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/imgcodecs.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/videoio.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/imgproc.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/imgproc/segmentation.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/ml.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/ml/ml.inl.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/objdetect.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/objdetect/detection_based_tracker.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/objdetect/face.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/photo.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching/warpers.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching/detail/warpers.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/cuda.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/cuda_types.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/cuda.inl.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching/detail/warpers_inl.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching/detail/matchers.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching/detail/motion_estimators.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching/detail/util.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching/detail/util_inl.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching/detail/camera.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching/detail/exposure_compensate.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching/detail/seam_finders.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching/detail/blenders.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/video.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/video/tracking.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/video/background_segm.hpp \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QMessageBox \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qmessagebox.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qtguiglobal.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qglobal.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qconfig-bootstrapped.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qconfig.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qtcore-config.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qtconfigmacros.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qtcoreexports.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qsystemdetection.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qprocessordetection.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qcompilerdetection.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qtypeinfo.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qcontainerfwd.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qsysinfo.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qlogging.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qflags.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qcompare_impl.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qatomic.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qbasicatomic.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qatomic_bootstrap.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qgenericatomic.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qatomic_cxx11.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qglobalstatic.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qnumeric.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qversiontagging.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qforeach.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qtgui-config.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qtguiexports.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qtwidgets-config.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qtwidgetsexports.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qdialog.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qwidget.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qwindowdefs.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qobjectdefs.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qnamespace.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qtmetamacros.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qobjectdefs_impl.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qwindowdefs_win.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qobject.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qstring.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qchar.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qstringview.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qbytearray.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qrefcount.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qarraydata.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qpair.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qarraydatapointer.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qarraydataops.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qcontainertools_impl.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qbytearrayalgorithms.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qbytearrayview.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qstringfwd.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qstringliteral.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qstringalgorithms.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qanystringview.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qutf8stringview.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qstringtokenizer.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qstringbuilder.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qlist.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qhashfunctions.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qiterator.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qbytearraylist.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qstringlist.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qalgorithms.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qstringmatcher.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qcoreevent.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qscopedpointer.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qmetatype.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qcompare.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qscopeguard.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qdatastream.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qiodevicebase.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qiterable.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qmetacontainer.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qcontainerinfo.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qtaggedpointer.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qmath.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qobject_impl.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qbindingstorage.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qmargins.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qaction.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qkeysequence.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qicon.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qsize.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qpixmap.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qpaintdevice.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qrect.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qpoint.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qcolor.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qrgb.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qrgba64.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qsharedpointer.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qshareddata.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qsharedpointer_impl.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qimage.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qpixelformat.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qtransform.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qpolygon.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qregion.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qline.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qvariant.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qdebug.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qtextstream.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qstringconverter_base.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qcontiguouscache.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qmap.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qshareddata_impl.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qset.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qhash.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qvarlengtharray.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qpalette.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qbrush.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qfont.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qfontmetrics.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qfontinfo.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qsizepolicy.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qcursor.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qbitmap.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qevent.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qiodevice.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qpointer.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qurl.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qeventpoint.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qvector2d.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qvectornd.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qpointingdevice.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qinputdevice.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qscreen.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/QList \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/QObject \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/QRect \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/QSize \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/QSizeF \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/QTransform \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qnativeinterface.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\screen.o screen.cpp
 
 release/udipm.o: udipm.cpp UI/ui_udipm.h \
@@ -3102,6 +3833,110 @@ release/udipm.o: udipm.cpp UI/ui_udipm.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qnativeinterface.h \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qtabwidget.h \
 		screen.h \
+		ty.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/opencv.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/opencv_modules.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/cvdef.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/version.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/hal/interface.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/cv_cpu_dispatch.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/cv_cpu_helper.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/hal/msa_macros.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/fast_math.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/base.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/cvstd.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/cvstd_wrapper.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/neon_utils.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/vsx_utils.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/check.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/traits.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/matx.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/saturate.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/types.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/mat.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/bufferpool.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/mat.inl.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/persistence.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/operations.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/cvstd.inl.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/utility.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/utils/instrumentation.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/utils/tls.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/optim.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/ovx.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/calib3d.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/features2d.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/miniflann.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/defines.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/config.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/affine.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/dnn.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/dnn/dnn.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/async.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/dnn/version.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/dnn/dict.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/dnn/layer.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/dnn/dnn.inl.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/dnn/utils/inference_engine.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/flann_base.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/general.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/matrix.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/params.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/any.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/saving.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/nn_index.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/result_set.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/all_indices.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/kdtree_index.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/dynamic_bitset.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/dist.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/heap.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/allocator.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/random.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/kdtree_single_index.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/kmeans_index.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/logger.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/composite_index.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/linear_index.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/hierarchical_clustering_index.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/lsh_index.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/lsh_table.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/autotuned_index.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/ground_truth.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/index_testing.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/timer.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/sampling.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/highgui.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/imgcodecs.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/videoio.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/imgproc.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/imgproc/segmentation.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/ml.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/ml/ml.inl.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/objdetect.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/objdetect/detection_based_tracker.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/objdetect/face.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/photo.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching/warpers.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching/detail/warpers.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/cuda.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/cuda_types.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/cuda.inl.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching/detail/warpers_inl.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching/detail/matchers.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching/detail/motion_estimators.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching/detail/util.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching/detail/util_inl.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching/detail/camera.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching/detail/exposure_compensate.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching/detail/seam_finders.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching/detail/blenders.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/video.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/video/tracking.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/video/background_segm.hpp \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QMessageBox \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qmessagebox.h \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qdialog.h
@@ -3246,10 +4081,115 @@ release/udm.o: udm.cpp udm.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qnativeinterface.h \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qtabwidget.h \
 		screen.h \
-		UI/ui_udm.h \
+		ty.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/opencv.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/opencv_modules.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/cvdef.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/version.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/hal/interface.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/cv_cpu_dispatch.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/cv_cpu_helper.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/hal/msa_macros.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/fast_math.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/base.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/cvstd.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/cvstd_wrapper.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/neon_utils.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/vsx_utils.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/check.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/traits.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/matx.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/saturate.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/types.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/mat.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/bufferpool.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/mat.inl.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/persistence.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/operations.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/cvstd.inl.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/utility.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/utils/instrumentation.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/utils/tls.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/optim.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/ovx.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/calib3d.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/features2d.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/miniflann.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/defines.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/config.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/affine.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/dnn.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/dnn/dnn.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/async.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/dnn/version.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/dnn/dict.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/dnn/layer.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/dnn/dnn.inl.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/dnn/utils/inference_engine.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/flann_base.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/general.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/matrix.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/params.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/any.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/saving.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/nn_index.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/result_set.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/all_indices.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/kdtree_index.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/dynamic_bitset.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/dist.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/heap.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/allocator.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/random.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/kdtree_single_index.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/kmeans_index.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/logger.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/composite_index.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/linear_index.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/hierarchical_clustering_index.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/lsh_index.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/lsh_table.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/autotuned_index.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/ground_truth.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/index_testing.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/timer.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/flann/sampling.h \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/highgui.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/imgcodecs.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/videoio.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/imgproc.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/imgproc/segmentation.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/ml.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/ml/ml.inl.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/objdetect.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/objdetect/detection_based_tracker.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/objdetect/face.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/photo.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching/warpers.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching/detail/warpers.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/cuda.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/cuda_types.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/core/cuda.inl.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching/detail/warpers_inl.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching/detail/matchers.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching/detail/motion_estimators.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching/detail/util.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching/detail/util_inl.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching/detail/camera.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching/detail/exposure_compensate.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching/detail/seam_finders.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/stitching/detail/blenders.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/video.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/video/tracking.hpp \
+		C:/OPENCV/QT-BUILD/install/include/opencv2/video/background_segm.hpp \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QMessageBox \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qmessagebox.h \
-		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qdialog.h
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qdialog.h \
+		UI/ui_udm.h \
+		menu.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\udm.o udm.cpp
 
 release/qrc_rubo.o: release/qrc_rubo.cpp 
