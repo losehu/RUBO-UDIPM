@@ -23,7 +23,7 @@
 
 QT_BEGIN_NAMESPACE
 
-class Ui_MainWindow
+class Ui_IpmWindow
 {
 public:
     QAction *open;
@@ -59,24 +59,23 @@ public:
     myLabel *label_pic1;
     QPushButton *button_clear;
     QLabel *label_tips;
-    QPushButton *pushButton;
     QMenuBar *menuBar;
     QMenu *menu_doc;
 
-    void setupUi(QMainWindow *MainWindow)
+    void setupUi(QMainWindow *IpmWindow)
     {
-        if (MainWindow->objectName().isEmpty())
-            MainWindow->setObjectName("MainWindow");
-        MainWindow->resize(1200, 650);
-        MainWindow->setStyleSheet(QString::fromUtf8("QToolBar{border-color: rgb(0, 0, 0);border:1px solid;}"));
-        MainWindow->setDocumentMode(true);
-        open = new QAction(MainWindow);
+        if (IpmWindow->objectName().isEmpty())
+            IpmWindow->setObjectName("IpmWindow");
+        IpmWindow->resize(1200, 650);
+        IpmWindow->setStyleSheet(QString::fromUtf8("QToolBar{border-color: rgb(0, 0, 0);border:1px solid;}"));
+        IpmWindow->setDocumentMode(true);
+        open = new QAction(IpmWindow);
         open->setObjectName("open");
-        about = new QAction(MainWindow);
+        about = new QAction(IpmWindow);
         about->setObjectName("about");
-        action_2 = new QAction(MainWindow);
+        action_2 = new QAction(IpmWindow);
         action_2->setObjectName("action_2");
-        centralWidget = new QWidget(MainWindow);
+        centralWidget = new QWidget(IpmWindow);
         centralWidget->setObjectName("centralWidget");
         button_openpic = new QPushButton(centralWidget);
         button_openpic->setObjectName("button_openpic");
@@ -166,10 +165,7 @@ public:
         label_tips = new QLabel(centralWidget);
         label_tips->setObjectName("label_tips");
         label_tips->setGeometry(QRect(0, 605, 1200, 16));
-        pushButton = new QPushButton(centralWidget);
-        pushButton->setObjectName("pushButton");
-        pushButton->setGeometry(QRect(300, 440, 100, 32));
-        MainWindow->setCentralWidget(centralWidget);
+        IpmWindow->setCentralWidget(centralWidget);
         label_pic1->raise();
         button_openpic->raise();
         button_change->raise();
@@ -199,70 +195,68 @@ public:
         label_y4->raise();
         button_clear->raise();
         label_tips->raise();
-        pushButton->raise();
-        menuBar = new QMenuBar(MainWindow);
+        menuBar = new QMenuBar(IpmWindow);
         menuBar->setObjectName("menuBar");
-        menuBar->setGeometry(QRect(0, 0, 1200, 22));
+        menuBar->setGeometry(QRect(0, 0, 1200, 26));
         menu_doc = new QMenu(menuBar);
         menu_doc->setObjectName("menu_doc");
-        MainWindow->setMenuBar(menuBar);
+        IpmWindow->setMenuBar(menuBar);
 
         menuBar->addAction(menu_doc->menuAction());
         menu_doc->addAction(open);
         menu_doc->addAction(about);
         menu_doc->addAction(action_2);
 
-        retranslateUi(MainWindow);
+        retranslateUi(IpmWindow);
 
-        QMetaObject::connectSlotsByName(MainWindow);
+        QMetaObject::connectSlotsByName(IpmWindow);
     } // setupUi
 
-    void retranslateUi(QMainWindow *MainWindow)
+    void retranslateUi(QMainWindow *IpmWindow)
     {
-        MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "RUBO IPM", nullptr));
-        open->setText(QCoreApplication::translate("MainWindow", "\346\211\223\345\274\200\345\233\276\347\211\207", nullptr));
+        IpmWindow->setWindowTitle(QCoreApplication::translate("IpmWindow", "RUBO IPM", nullptr));
+        open->setText(QCoreApplication::translate("IpmWindow", "\346\211\223\345\274\200\345\233\276\347\211\207", nullptr));
 #if QT_CONFIG(tooltip)
-        open->setToolTip(QCoreApplication::translate("MainWindow", "\346\211\223\345\274\200\345\233\276\347\211\207", nullptr));
+        open->setToolTip(QCoreApplication::translate("IpmWindow", "\346\211\223\345\274\200\345\233\276\347\211\207", nullptr));
 #endif // QT_CONFIG(tooltip)
 #if QT_CONFIG(shortcut)
-        open->setShortcut(QCoreApplication::translate("MainWindow", "Ctrl+O", nullptr));
+        open->setShortcut(QCoreApplication::translate("IpmWindow", "Ctrl+O", nullptr));
 #endif // QT_CONFIG(shortcut)
-        about->setText(QCoreApplication::translate("MainWindow", "\345\205\263\344\272\216", nullptr));
+        about->setText(QCoreApplication::translate("IpmWindow", "\345\205\263\344\272\216", nullptr));
 #if QT_CONFIG(tooltip)
-        about->setToolTip(QCoreApplication::translate("MainWindow", "\345\205\263\344\272\216", nullptr));
+        about->setToolTip(QCoreApplication::translate("IpmWindow", "\345\205\263\344\272\216", nullptr));
 #endif // QT_CONFIG(tooltip)
 #if QT_CONFIG(shortcut)
-        about->setShortcut(QCoreApplication::translate("MainWindow", "Ctrl+A", nullptr));
+        about->setShortcut(QCoreApplication::translate("IpmWindow", "Ctrl+A", nullptr));
 #endif // QT_CONFIG(shortcut)
-        action_2->setText(QCoreApplication::translate("MainWindow", "\351\200\200\345\207\272", nullptr));
+        action_2->setText(QCoreApplication::translate("IpmWindow", "\351\200\200\345\207\272", nullptr));
 #if QT_CONFIG(shortcut)
-        action_2->setShortcut(QCoreApplication::translate("MainWindow", "Ctrl+Q", nullptr));
+        action_2->setShortcut(QCoreApplication::translate("IpmWindow", "Ctrl+Q", nullptr));
 #endif // QT_CONFIG(shortcut)
-        button_openpic->setText(QCoreApplication::translate("MainWindow", "\346\211\223\345\274\200\345\233\276\347\211\207", nullptr));
-        button_change->setText(QCoreApplication::translate("MainWindow", "\351\200\217\350\247\206\345\217\230\346\215\242", nullptr));
-        label_high->setText(QCoreApplication::translate("MainWindow", "\347\273\223\346\236\234\345\233\276\351\253\230\345\272\246\357\274\232", nullptr));
-        label_ysite->setText(QCoreApplication::translate("MainWindow", "\346\226\271\345\275\242\344\270\255\345\277\203\350\267\235\351\241\266\351\203\250\345\203\217\347\264\240\357\274\232", nullptr));
-        label_width->setText(QCoreApplication::translate("MainWindow", "\347\273\223\346\236\234\345\233\276\345\256\275\345\272\246\357\274\232", nullptr));
-        label_len->setText(QCoreApplication::translate("MainWindow", "\346\226\271\345\275\242\345\203\217\347\264\240\350\276\271\351\225\277\357\274\232", nullptr));
-        label_x1->setText(QCoreApplication::translate("MainWindow", "X1:", nullptr));
-        label_y1->setText(QCoreApplication::translate("MainWindow", "Y1:", nullptr));
-        label_x2->setText(QCoreApplication::translate("MainWindow", "X2:", nullptr));
-        label_x3->setText(QCoreApplication::translate("MainWindow", "X3:", nullptr));
-        label_x4->setText(QCoreApplication::translate("MainWindow", "X4:", nullptr));
-        label_y2->setText(QCoreApplication::translate("MainWindow", "Y2:", nullptr));
-        label_y3->setText(QCoreApplication::translate("MainWindow", "Y3:", nullptr));
-        label_y4->setText(QCoreApplication::translate("MainWindow", "Y4:", nullptr));
+        button_openpic->setText(QCoreApplication::translate("IpmWindow", "\346\211\223\345\274\200\345\233\276\347\211\207", nullptr));
+        button_change->setText(QCoreApplication::translate("IpmWindow", "\351\200\217\350\247\206\345\217\230\346\215\242", nullptr));
+        label_high->setText(QCoreApplication::translate("IpmWindow", "\347\273\223\346\236\234\345\233\276\351\253\230\345\272\246\357\274\232", nullptr));
+        label_ysite->setText(QCoreApplication::translate("IpmWindow", "\346\226\271\345\275\242\344\270\255\345\277\203\350\267\235\351\241\266\351\203\250\345\203\217\347\264\240\357\274\232", nullptr));
+        label_width->setText(QCoreApplication::translate("IpmWindow", "\347\273\223\346\236\234\345\233\276\345\256\275\345\272\246\357\274\232", nullptr));
+        label_len->setText(QCoreApplication::translate("IpmWindow", "\346\226\271\345\275\242\345\203\217\347\264\240\350\276\271\351\225\277\357\274\232", nullptr));
+        label_x1->setText(QCoreApplication::translate("IpmWindow", "X1:", nullptr));
+        label_y1->setText(QCoreApplication::translate("IpmWindow", "Y1:", nullptr));
+        label_x2->setText(QCoreApplication::translate("IpmWindow", "X2:", nullptr));
+        label_x3->setText(QCoreApplication::translate("IpmWindow", "X3:", nullptr));
+        label_x4->setText(QCoreApplication::translate("IpmWindow", "X4:", nullptr));
+        label_y2->setText(QCoreApplication::translate("IpmWindow", "Y2:", nullptr));
+        label_y3->setText(QCoreApplication::translate("IpmWindow", "Y3:", nullptr));
+        label_y4->setText(QCoreApplication::translate("IpmWindow", "Y4:", nullptr));
         label_pic1->setText(QString());
-        button_clear->setText(QCoreApplication::translate("MainWindow", "\346\270\205\351\231\244", nullptr));
-        label_tips->setText(QCoreApplication::translate("MainWindow", "\346\217\220\347\244\272\357\274\232", nullptr));
-        pushButton->setText(QCoreApplication::translate("MainWindow", "PushButton", nullptr));
-        menu_doc->setTitle(QCoreApplication::translate("MainWindow", "\346\226\207\344\273\266", nullptr));
+        button_clear->setText(QCoreApplication::translate("IpmWindow", "\346\270\205\351\231\244", nullptr));
+        label_tips->setText(QCoreApplication::translate("IpmWindow", "\346\217\220\347\244\272\357\274\232", nullptr));
+        menu_doc->setTitle(QCoreApplication::translate("IpmWindow", "\346\226\207\344\273\266", nullptr));
     } // retranslateUi
 
 };
 
 namespace Ui {
-    class MainWindow: public Ui_MainWindow {};
+    class IpmWindow: public Ui_IpmWindow {};
 } // namespace Ui
 
 QT_END_NAMESPACE

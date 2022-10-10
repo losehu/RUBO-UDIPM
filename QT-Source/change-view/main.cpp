@@ -1,7 +1,10 @@
 #include "ipm.h"
 #include "menu.h"
 #include <QApplication>
-#include "window.h"
+#include "screen.h"
+#include "udm.h"
+#include "udipm.h"
+
 int main(int argc, char *argv[])
 {
 
@@ -11,10 +14,14 @@ int main(int argc, char *argv[])
     //获取设备屏幕大小
     screenX = screenRect.width();
     screenY = screenRect.height();
-//    MainWindow w;
-//    w.show();
-    MyWindow myw;
-    myw.show();
+    IpmWindow ipmw; //Inverse Perspective Mapping
+    ipmw.show();
+    UdmWindow udmw; //undistort Mapping
+    udmw.show();
+    MenuWindow menuw; //menu
+    menuw.show();
+    UdipmWindow udipmw; //undistort Mapping & Inverse Perspective Mapping
+    udipmw.show();
 
     return a.exec();
 }

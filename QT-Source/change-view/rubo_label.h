@@ -3,7 +3,7 @@
 #include <QLabel>
 #include "ipm.h"
 
-class MainWindow;
+class IpmWindow;
 
 class myLabel : public QLabel
 {

@@ -1,5 +1,5 @@
 /********************************************************************************
-** Form generated from reading UI file 'mywindow.ui'
+** Form generated from reading UI file 'MenuWindow.ui'
 **
 ** Created by: Qt User Interface Compiler version 6.3.1
 **
@@ -33,12 +33,12 @@ public:
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
-    void setupUi(QMainWindow *MyWindow)
+    void setupUi(QMainWindow *MenuWindow)
     {
-        if (MyWindow->objectName().isEmpty())
-            MyWindow->setObjectName(QString::fromUtf8("MyWindow"));
-        MyWindow->resize(800, 400);
-        centralwidget = new QWidget(MyWindow);
+        if (MenuWindow->objectName().isEmpty())
+            MenuWindow->setObjectName(QString::fromUtf8("MenuWindow"));
+        MenuWindow->resize(800, 400);
+        centralwidget = new QWidget(MenuWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         radioButton = new QRadioButton(centralwidget);
         radioButton->setObjectName(QString::fromUtf8("radioButton"));
@@ -55,34 +55,34 @@ public:
         radioButton_3 = new QRadioButton(centralwidget);
         radioButton_3->setObjectName(QString::fromUtf8("radioButton_3"));
         radioButton_3->setGeometry(QRect(250, 100, 99, 20));
-        MyWindow->setCentralWidget(centralwidget);
-        menubar = new QMenuBar(MyWindow);
+        MenuWindow->setCentralWidget(centralwidget);
+        menubar = new QMenuBar(MenuWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
         menubar->setGeometry(QRect(0, 0, 800, 22));
-        MyWindow->setMenuBar(menubar);
-        statusbar = new QStatusBar(MyWindow);
+        MenuWindow->setMenuBar(menubar);
+        statusbar = new QStatusBar(MenuWindow);
         statusbar->setObjectName(QString::fromUtf8("statusbar"));
-        MyWindow->setStatusBar(statusbar);
+        MenuWindow->setStatusBar(statusbar);
 
-        retranslateUi(MyWindow);
+        retranslateUi(MenuWindow);
 
-        QMetaObject::connectSlotsByName(MyWindow);
+        QMetaObject::connectSlotsByName(MenuWindow);
     } // setupUi
 
-    void retranslateUi(QMainWindow *MyWindow)
+    void retranslateUi(QMainWindow *MenuWindow)
     {
-        MyWindow->setWindowTitle(QCoreApplication::translate("MyWindow", "MainWindow", nullptr));
-        radioButton->setText(QCoreApplication::translate("MyWindow", "RadioButton", nullptr));
-        radioButton_2->setText(QCoreApplication::translate("MyWindow", "RadioButton", nullptr));
-        pushButton->setText(QCoreApplication::translate("MyWindow", "PushButton", nullptr));
-        toolButton->setText(QCoreApplication::translate("MyWindow", "...", nullptr));
-        radioButton_3->setText(QCoreApplication::translate("MyWindow", "RadioButton", nullptr));
+        MenuWindow->setWindowTitle(QCoreApplication::translate("MenuWindow", "IpmWindow", nullptr));
+        radioButton->setText(QCoreApplication::translate("MenuWindow", "RadioButton", nullptr));
+        radioButton_2->setText(QCoreApplication::translate("MenuWindow", "RadioButton", nullptr));
+        pushButton->setText(QCoreApplication::translate("MenuWindow", "PushButton", nullptr));
+        toolButton->setText(QCoreApplication::translate("MenuWindow", "...", nullptr));
+        radioButton_3->setText(QCoreApplication::translate("MenuWindow", "RadioButton", nullptr));
     } // retranslateUi
 
 };
 
 namespace Ui {
-    class MyWindow: public Ui_MyWindow {};
+    class MenuWindow: public Ui_MyWindow {};
 } // namespace Ui
 
 QT_END_NAMESPACE

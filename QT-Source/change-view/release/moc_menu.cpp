@@ -25,28 +25,28 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 namespace {
-struct qt_meta_stringdata_MyWindow_t {
+struct qt_meta_stringdata_MenuWindow_t {
     uint offsetsAndSizes[6];
-    char stringdata0[9];
+    char stringdata0[11];
     char stringdata1[22];
     char stringdata2[1];
 };
 #define QT_MOC_LITERAL(ofs, len) \
-    uint(sizeof(qt_meta_stringdata_MyWindow_t::offsetsAndSizes) + ofs), len 
-Q_CONSTINIT static const qt_meta_stringdata_MyWindow_t qt_meta_stringdata_MyWindow = {
+    uint(sizeof(qt_meta_stringdata_MenuWindow_t::offsetsAndSizes) + ofs), len 
+Q_CONSTINIT static const qt_meta_stringdata_MenuWindow_t qt_meta_stringdata_MenuWindow = {
     {
-        QT_MOC_LITERAL(0, 8),  // "MyWindow"
-        QT_MOC_LITERAL(9, 21),  // "on_pushButton_clicked"
-        QT_MOC_LITERAL(31, 0)   // ""
+        QT_MOC_LITERAL(0, 10),  // "MenuWindow"
+        QT_MOC_LITERAL(11, 21),  // "on_pushButton_clicked"
+        QT_MOC_LITERAL(33, 0)   // ""
     },
-    "MyWindow",
+    "MenuWindow",
     "on_pushButton_clicked",
     ""
 };
 #undef QT_MOC_LITERAL
 } // unnamed namespace
 
-Q_CONSTINIT static const uint qt_meta_data_MyWindow[] = {
+Q_CONSTINIT static const uint qt_meta_data_MenuWindow[] = {
 
  // content:
       10,       // revision
@@ -68,25 +68,25 @@ Q_CONSTINIT static const uint qt_meta_data_MyWindow[] = {
        0        // eod
 };
 
-Q_CONSTINIT const QMetaObject MyWindow::staticMetaObject = { {
+Q_CONSTINIT const QMetaObject MenuWindow::staticMetaObject = { {
     QMetaObject::SuperData::link<QMainWindow::staticMetaObject>(),
-    qt_meta_stringdata_MyWindow.offsetsAndSizes,
-    qt_meta_data_MyWindow,
+    qt_meta_stringdata_MenuWindow.offsetsAndSizes,
+    qt_meta_data_MenuWindow,
     qt_static_metacall,
     nullptr,
-    qt_incomplete_metaTypeArray<qt_meta_stringdata_MyWindow_t,
+    qt_incomplete_metaTypeArray<qt_meta_stringdata_MenuWindow_t,
         // Q_OBJECT / Q_GADGET
-        QtPrivate::TypeAndForceComplete<MyWindow, std::true_type>,
+        QtPrivate::TypeAndForceComplete<MenuWindow, std::true_type>,
         // method 'on_pushButton_clicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
     nullptr
 } };
 
-void MyWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+void MenuWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        auto *_t = static_cast<MyWindow *>(_o);
+        auto *_t = static_cast<MenuWindow *>(_o);
         (void)_t;
         switch (_id) {
         case 0: _t->on_pushButton_clicked(); break;
@@ -96,20 +96,20 @@ void MyWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, vo
     (void)_a;
 }
 
-const QMetaObject *MyWindow::metaObject() const
+const QMetaObject *MenuWindow::metaObject() const
 {
     return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
 }
 
-void *MyWindow::qt_metacast(const char *_clname)
+void *MenuWindow::qt_metacast(const char *_clname)
 {
     if (!_clname) return nullptr;
-    if (!strcmp(_clname, qt_meta_stringdata_MyWindow.stringdata0))
+    if (!strcmp(_clname, qt_meta_stringdata_MenuWindow.stringdata0))
         return static_cast<void*>(this);
     return QMainWindow::qt_metacast(_clname);
 }
 
-int MyWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+int MenuWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
     _id = QMainWindow::qt_metacall(_c, _id, _a);
     if (_id < 0)

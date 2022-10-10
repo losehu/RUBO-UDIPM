@@ -30,7 +30,9 @@ SOURCES += \
     change-view.cpp \
     menu.cpp \
     rubo_label.cpp \
-    window.cpp
+    screen.cpp \
+    udipm.cpp \
+    udm.cpp
 
 HEADERS += \
     UI/ipm.h \
@@ -39,12 +41,16 @@ HEADERS += \
     ipm.h \
     menu.h \
     rubo_label.h \
+    screen.h \
     ty.h \
-    window.h
+    udipm.h \
+    udm.h
 
 FORMS += \
         ipm.ui \
-        menu.ui
+        menu.ui \
+        udipm.ui \
+        udm.ui
 UI_DIR=./UI
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin

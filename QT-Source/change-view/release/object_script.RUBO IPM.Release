@@ -3,8 +3,12 @@ release/main.o
 release/change-view.o
 release/menu.o
 release/rubo_label.o
-release/window.o
+release/screen.o
+release/udipm.o
+release/udm.o
 release/qrc_rubo.o
 release/moc_ipm.o
 release/moc_menu.o
 release/moc_rubo_label.o
+release/moc_udipm.o
+release/moc_udm.o

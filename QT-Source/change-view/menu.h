@@ -1,20 +1,20 @@
 #ifndef MENU_H
 #define MENU_H
 #include <QMainWindow>
-#include "window.h"
+#include "screen.h"
 
 namespace Ui {
-class MyWindow;
+class MenuWindow;
 
 }
-class MyWindow:public QMainWindow
+class MenuWindow:public QMainWindow
 {
     Q_OBJECT
 public:
-    explicit MyWindow(QWidget *parent = nullptr);
-    ~MyWindow();
+    explicit MenuWindow(QWidget *parent = nullptr);
+    ~MenuWindow();
 public:
-    Ui::MyWindow *ui;
+    Ui::MenuWindow *ui;
 
 
 private slots:

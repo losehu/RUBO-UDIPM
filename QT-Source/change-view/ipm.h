@@ -30,23 +30,23 @@
 /***********************************RUBO HEADFILE*********************************/
 #include "change-view.h"
 #include "menu.h"
-#include "window.h"
+#include "screen.h"
 
 using namespace std;
 using namespace cv;
 namespace Ui {
-class MainWindow;
+class IpmWindow;
 
 }
 class myLabel;
-class MainWindow : public QMainWindow
+class IpmWindow : public QMainWindow
 {
     Q_OBJECT
 
 public:
-     MainWindow(QWidget *parent = nullptr);
-    ~MainWindow();
-    Ui::MainWindow *ui;
+     IpmWindow(QWidget *parent = nullptr);
+    ~IpmWindow();
+    Ui::IpmWindow *ui;
     myLabel* mylabel;
 
 private slots:
@@ -79,12 +79,11 @@ private slots:
 
     void on_open_triggered();
 
-    void on_pushButton_clicked();
 
 
 private:
     int id1;
-    MyWindow myw;
+    MenuWindow menuw;
 
 
 };

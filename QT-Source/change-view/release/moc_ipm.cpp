@@ -26,9 +26,9 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 namespace {
-struct qt_meta_stringdata_MainWindow_t {
-    uint offsetsAndSizes[66];
-    char stringdata0[11];
+struct qt_meta_stringdata_IpmWindow_t {
+    uint offsetsAndSizes[64];
+    char stringdata0[10];
     char stringdata1[26];
     char stringdata2[1];
     char stringdata3[18];
@@ -60,47 +60,45 @@ struct qt_meta_stringdata_MainWindow_t {
     char stringdata29[25];
     char stringdata30[19];
     char stringdata31[18];
-    char stringdata32[22];
 };
 #define QT_MOC_LITERAL(ofs, len) \
-    uint(sizeof(qt_meta_stringdata_MainWindow_t::offsetsAndSizes) + ofs), len 
-Q_CONSTINIT static const qt_meta_stringdata_MainWindow_t qt_meta_stringdata_MainWindow = {
+    uint(sizeof(qt_meta_stringdata_IpmWindow_t::offsetsAndSizes) + ofs), len 
+Q_CONSTINIT static const qt_meta_stringdata_IpmWindow_t qt_meta_stringdata_IpmWindow = {
     {
-        QT_MOC_LITERAL(0, 10),  // "MainWindow"
-        QT_MOC_LITERAL(11, 25),  // "on_button_openpic_clicked"
-        QT_MOC_LITERAL(37, 0),  // ""
-        QT_MOC_LITERAL(38, 17),  // "QString_to_string"
-        QT_MOC_LITERAL(56, 1),  // "a"
-        QT_MOC_LITERAL(58, 7),  // "string*"
-        QT_MOC_LITERAL(66, 1),  // "b"
-        QT_MOC_LITERAL(68, 12),  // "init_windows"
-        QT_MOC_LITERAL(81, 11),  // "start_width"
-        QT_MOC_LITERAL(93, 10),  // "start_high"
-        QT_MOC_LITERAL(104, 14),  // "update_windows"
-        QT_MOC_LITERAL(119, 19),  // "init_model1_windows"
-        QT_MOC_LITERAL(139, 7),  // "start_x"
-        QT_MOC_LITERAL(147, 7),  // "start_y"
-        QT_MOC_LITERAL(155, 19),  // "init_model2_windows"
-        QT_MOC_LITERAL(175, 19),  // "init_model3_windows"
-        QT_MOC_LITERAL(195, 19),  // "init_model4_windows"
-        QT_MOC_LITERAL(215, 14),  // "model4_start_x"
-        QT_MOC_LITERAL(230, 14),  // "model4_start_y"
-        QT_MOC_LITERAL(245, 19),  // "init_model5_windows"
-        QT_MOC_LITERAL(265, 14),  // "model5_start_x"
-        QT_MOC_LITERAL(280, 14),  // "model5_start_y"
-        QT_MOC_LITERAL(295, 23),  // "open_pic_update_windows"
-        QT_MOC_LITERAL(319, 31),  // "open_mainwindows_updata_windows"
-        QT_MOC_LITERAL(351, 14),  // "active_windows"
-        QT_MOC_LITERAL(366, 9),  // "judge_int"
-        QT_MOC_LITERAL(376, 23),  // "on_button_clear_clicked"
-        QT_MOC_LITERAL(400, 11),  // "timerUpdate"
-        QT_MOC_LITERAL(412, 21),  // "on_action_2_triggered"
-        QT_MOC_LITERAL(434, 24),  // "on_button_change_clicked"
-        QT_MOC_LITERAL(459, 18),  // "on_about_triggered"
-        QT_MOC_LITERAL(478, 17),  // "on_open_triggered"
-        QT_MOC_LITERAL(496, 21)   // "on_pushButton_clicked"
+        QT_MOC_LITERAL(0, 9),  // "IpmWindow"
+        QT_MOC_LITERAL(10, 25),  // "on_button_openpic_clicked"
+        QT_MOC_LITERAL(36, 0),  // ""
+        QT_MOC_LITERAL(37, 17),  // "QString_to_string"
+        QT_MOC_LITERAL(55, 1),  // "a"
+        QT_MOC_LITERAL(57, 7),  // "string*"
+        QT_MOC_LITERAL(65, 1),  // "b"
+        QT_MOC_LITERAL(67, 12),  // "init_windows"
+        QT_MOC_LITERAL(80, 11),  // "start_width"
+        QT_MOC_LITERAL(92, 10),  // "start_high"
+        QT_MOC_LITERAL(103, 14),  // "update_windows"
+        QT_MOC_LITERAL(118, 19),  // "init_model1_windows"
+        QT_MOC_LITERAL(138, 7),  // "start_x"
+        QT_MOC_LITERAL(146, 7),  // "start_y"
+        QT_MOC_LITERAL(154, 19),  // "init_model2_windows"
+        QT_MOC_LITERAL(174, 19),  // "init_model3_windows"
+        QT_MOC_LITERAL(194, 19),  // "init_model4_windows"
+        QT_MOC_LITERAL(214, 14),  // "model4_start_x"
+        QT_MOC_LITERAL(229, 14),  // "model4_start_y"
+        QT_MOC_LITERAL(244, 19),  // "init_model5_windows"
+        QT_MOC_LITERAL(264, 14),  // "model5_start_x"
+        QT_MOC_LITERAL(279, 14),  // "model5_start_y"
+        QT_MOC_LITERAL(294, 23),  // "open_pic_update_windows"
+        QT_MOC_LITERAL(318, 31),  // "open_mainwindows_updata_windows"
+        QT_MOC_LITERAL(350, 14),  // "active_windows"
+        QT_MOC_LITERAL(365, 9),  // "judge_int"
+        QT_MOC_LITERAL(375, 23),  // "on_button_clear_clicked"
+        QT_MOC_LITERAL(399, 11),  // "timerUpdate"
+        QT_MOC_LITERAL(411, 21),  // "on_action_2_triggered"
+        QT_MOC_LITERAL(433, 24),  // "on_button_change_clicked"
+        QT_MOC_LITERAL(458, 18),  // "on_about_triggered"
+        QT_MOC_LITERAL(477, 17)   // "on_open_triggered"
     },
-    "MainWindow",
+    "IpmWindow",
     "on_button_openpic_clicked",
     "",
     "QString_to_string",
@@ -131,19 +129,18 @@ Q_CONSTINIT static const qt_meta_stringdata_MainWindow_t qt_meta_stringdata_Main
     "on_action_2_triggered",
     "on_button_change_clicked",
     "on_about_triggered",
-    "on_open_triggered",
-    "on_pushButton_clicked"
+    "on_open_triggered"
 };
 #undef QT_MOC_LITERAL
 } // unnamed namespace
 
-Q_CONSTINIT static const uint qt_meta_data_MainWindow[] = {
+Q_CONSTINIT static const uint qt_meta_data_IpmWindow[] = {
 
  // content:
       10,       // revision
        0,       // classname
        0,    0, // classinfo
-      20,   14, // methods
+      19,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -151,26 +148,25 @@ Q_CONSTINIT static const uint qt_meta_data_MainWindow[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,  134,    2, 0x08,    1 /* Private */,
-       3,    2,  135,    2, 0x08,    2 /* Private */,
-       7,    2,  140,    2, 0x08,    5 /* Private */,
-      10,    0,  145,    2, 0x08,    8 /* Private */,
-      11,    2,  146,    2, 0x08,    9 /* Private */,
-      14,    2,  151,    2, 0x08,   12 /* Private */,
-      15,    2,  156,    2, 0x08,   15 /* Private */,
-      16,    2,  161,    2, 0x08,   18 /* Private */,
-      19,    2,  166,    2, 0x08,   21 /* Private */,
-      22,    0,  171,    2, 0x08,   24 /* Private */,
-      23,    0,  172,    2, 0x08,   25 /* Private */,
-      24,    0,  173,    2, 0x08,   26 /* Private */,
-      25,    1,  174,    2, 0x08,   27 /* Private */,
-      26,    0,  177,    2, 0x08,   29 /* Private */,
-      27,    0,  178,    2, 0x08,   30 /* Private */,
-      28,    0,  179,    2, 0x08,   31 /* Private */,
-      29,    0,  180,    2, 0x08,   32 /* Private */,
-      30,    0,  181,    2, 0x08,   33 /* Private */,
-      31,    0,  182,    2, 0x08,   34 /* Private */,
-      32,    0,  183,    2, 0x08,   35 /* Private */,
+       1,    0,  128,    2, 0x08,    1 /* Private */,
+       3,    2,  129,    2, 0x08,    2 /* Private */,
+       7,    2,  134,    2, 0x08,    5 /* Private */,
+      10,    0,  139,    2, 0x08,    8 /* Private */,
+      11,    2,  140,    2, 0x08,    9 /* Private */,
+      14,    2,  145,    2, 0x08,   12 /* Private */,
+      15,    2,  150,    2, 0x08,   15 /* Private */,
+      16,    2,  155,    2, 0x08,   18 /* Private */,
+      19,    2,  160,    2, 0x08,   21 /* Private */,
+      22,    0,  165,    2, 0x08,   24 /* Private */,
+      23,    0,  166,    2, 0x08,   25 /* Private */,
+      24,    0,  167,    2, 0x08,   26 /* Private */,
+      25,    1,  168,    2, 0x08,   27 /* Private */,
+      26,    0,  171,    2, 0x08,   29 /* Private */,
+      27,    0,  172,    2, 0x08,   30 /* Private */,
+      28,    0,  173,    2, 0x08,   31 /* Private */,
+      29,    0,  174,    2, 0x08,   32 /* Private */,
+      30,    0,  175,    2, 0x08,   33 /* Private */,
+      31,    0,  176,    2, 0x08,   34 /* Private */,
 
  // slots: parameters
     QMetaType::Void,
@@ -192,20 +188,19 @@ Q_CONSTINIT static const uint qt_meta_data_MainWindow[] = {
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
-    QMetaType::Void,
 
        0        // eod
 };
 
-Q_CONSTINIT const QMetaObject MainWindow::staticMetaObject = { {
+Q_CONSTINIT const QMetaObject IpmWindow::staticMetaObject = { {
     QMetaObject::SuperData::link<QMainWindow::staticMetaObject>(),
-    qt_meta_stringdata_MainWindow.offsetsAndSizes,
-    qt_meta_data_MainWindow,
+    qt_meta_stringdata_IpmWindow.offsetsAndSizes,
+    qt_meta_data_IpmWindow,
     qt_static_metacall,
     nullptr,
-    qt_incomplete_metaTypeArray<qt_meta_stringdata_MainWindow_t,
+    qt_incomplete_metaTypeArray<qt_meta_stringdata_IpmWindow_t,
         // Q_OBJECT / Q_GADGET
-        QtPrivate::TypeAndForceComplete<MainWindow, std::true_type>,
+        QtPrivate::TypeAndForceComplete<IpmWindow, std::true_type>,
         // method 'on_button_openpic_clicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'QString_to_string'
@@ -258,17 +253,15 @@ Q_CONSTINIT const QMetaObject MainWindow::staticMetaObject = { {
         // method 'on_about_triggered'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'on_open_triggered'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'on_pushButton_clicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
     nullptr
 } };
 
-void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+void IpmWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        auto *_t = static_cast<MainWindow *>(_o);
+        auto *_t = static_cast<IpmWindow *>(_o);
         (void)_t;
         switch (_id) {
         case 0: _t->on_button_openpic_clicked(); break;
@@ -291,38 +284,37 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 16: _t->on_button_change_clicked(); break;
         case 17: _t->on_about_triggered(); break;
         case 18: _t->on_open_triggered(); break;
-        case 19: _t->on_pushButton_clicked(); break;
         default: ;
         }
     }
 }
 
-const QMetaObject *MainWindow::metaObject() const
+const QMetaObject *IpmWindow::metaObject() const
 {
     return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
 }
 
-void *MainWindow::qt_metacast(const char *_clname)
+void *IpmWindow::qt_metacast(const char *_clname)
 {
     if (!_clname) return nullptr;
-    if (!strcmp(_clname, qt_meta_stringdata_MainWindow.stringdata0))
+    if (!strcmp(_clname, qt_meta_stringdata_IpmWindow.stringdata0))
         return static_cast<void*>(this);
     return QMainWindow::qt_metacast(_clname);
 }
 
-int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+int IpmWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
     _id = QMainWindow::qt_metacall(_c, _id, _a);
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 20)
+        if (_id < 19)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 20;
+        _id -= 19;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 20)
+        if (_id < 19)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 20;
+        _id -= 19;
     }
     return _id;
 }

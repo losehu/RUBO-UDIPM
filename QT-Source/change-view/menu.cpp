@@ -1,9 +1,9 @@
 #include "ui_menu.h"
 #include "menu.h"
 #include "QMessageBox"
-MyWindow::MyWindow(QWidget *parent) :
+MenuWindow::MenuWindow(QWidget *parent) :
         QMainWindow(parent),
-        ui(new Ui::MyWindow) {
+        ui(new Ui::MenuWindow) {
 
     this->setWindowIcon(QIcon(":RUBO1-tou.png"));
 
@@ -12,11 +12,11 @@ MyWindow::MyWindow(QWidget *parent) :
 //    setFixedSize(  screenX/4,  screenY/4);
 
    }
-MyWindow::~MyWindow() {
+MenuWindow::~MenuWindow() {
     delete ui;
 }
 
-void MyWindow::on_pushButton_clicked()
+void MenuWindow::on_pushButton_clicked()
 {
     QMessageBox::information(this, tr("打开图像失败"), tr("打开图像失败!"));
 

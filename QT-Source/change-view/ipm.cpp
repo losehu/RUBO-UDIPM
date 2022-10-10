@@ -4,9 +4,9 @@
 using namespace std;
 using namespace cv;
 pic_show pic;
-MainWindow::MainWindow(QWidget *parent) :
+IpmWindow::IpmWindow(QWidget *parent) :
         QMainWindow(parent),
-        ui(new Ui::MainWindow) {
+        ui(new Ui::IpmWindow) {
 
 
 
@@ -24,22 +24,22 @@ MainWindow::MainWindow(QWidget *parent) :
     open_mainwindows_updata_windows();
 
    }
-bool MainWindow::judge_int(QString a) {
+bool IpmWindow::judge_int(QString a) {
     if (!a.contains(QRegularExpression("^\\d+$"))) {
         QMessageBox::critical(this, "错误", "参数输入错误！");
         return 0;
     }
     return 1;
 }
-MainWindow::~MainWindow() {
+IpmWindow::~IpmWindow() {
     delete ui;
 }
-void MainWindow::open_pic_update_windows() {
+void IpmWindow::open_pic_update_windows() {
     init_windows(pic.show_width, pic.show_high);
     ui->label_tips->setText("用鼠标右键点击，从方形左下-右下-左上-右上选取四个点:");
     ui->label_pic1->setGeometry(ui->label_pic1->x(), ui->label_pic1->y(), pic.show_width, pic.show_high);
 }
-void MainWindow::open_mainwindows_updata_windows() {
+void IpmWindow::open_mainwindows_updata_windows() {
 
     int init_width = 114, init_high = 100;
     float n1 = (float)screenX / 5 * 3 / init_width;
@@ -55,10 +55,10 @@ void MainWindow::open_mainwindows_updata_windows() {
     pic.PIC_OPEN = 0;
     pic.change = 0;
 }
-void MainWindow::QString_to_string(QString a, string *b) {
+void IpmWindow::QString_to_string(QString a, string *b) {
     *b = a.toStdString();
 }
-void MainWindow::init_model1_windows(int start_x, int start_y) {
+void IpmWindow::init_model1_windows(int start_x, int start_y) {
     ui->label_width->setGeometry(start_x, start_y, ui->label_width->width(), ui->label_width->height());
     ui->label_high->setGeometry(start_x, start_y + 50, ui->label_high->width(), ui->label_high->height());
     ui->label_ysite->setGeometry(start_x - 50, start_y + 50 * 2, ui->label_ysite->width(), ui->label_ysite->height());
@@ -69,7 +69,7 @@ void MainWindow::init_model1_windows(int start_x, int start_y) {
                                 ui->text_ysite->height());
     ui->text_len->setGeometry(start_x + 100, start_y + 50 * 3 - 10, ui->text_len->width(), ui->text_len->height());
 }
-void MainWindow::init_model2_windows(int start_x, int start_y) {
+void IpmWindow::init_model2_windows(int start_x, int start_y) {
     ui->label_x1->setGeometry(start_x, start_y, ui->label_x1->width(), ui->label_x1->height());
     ui->label_x2->setGeometry(start_x, start_y + 50, ui->label_x2->width(), ui->label_x2->height());
     ui->label_x3->setGeometry(start_x, start_y + 50 * 2, ui->label_x3->width(), ui->label_x3->height());
@@ -87,19 +87,19 @@ void MainWindow::init_model2_windows(int start_x, int start_y) {
     ui->text_y3->setGeometry(start_x + 100 + 30, start_y + 50 * 2 - 10, ui->text_y3->width(), ui->text_y3->height());
     ui->text_y4->setGeometry(start_x + 100 + 30, start_y + 50 * 3 - 10, ui->text_y4->width(), ui->text_y4->height());
 }
-void MainWindow::init_model3_windows(int start_x, int start_y) {
+void IpmWindow::init_model3_windows(int start_x, int start_y) {
     ui->button_clear->setGeometry(start_x + 60, start_y, ui->button_clear->width(), ui->button_clear->height());
     ui->button_openpic->setGeometry(start_x + 60, start_y + 40, ui->button_openpic->width(),
                                     ui->button_openpic->height());
     ui->button_change->setGeometry(start_x + 60, start_y + 80, ui->button_change->width(), ui->button_change->height());
 }
-void MainWindow::init_model4_windows(int start_x, int start_y) {
+void IpmWindow::init_model4_windows(int start_x, int start_y) {
     ui->label_pic1->setGeometry(start_x, start_y, ui->label_pic1->width(), ui->label_pic1->height());
 }
-void MainWindow::init_model5_windows(int start_x, int start_y) {
+void IpmWindow::init_model5_windows(int start_x, int start_y) {
     ui->label_tips->setGeometry(start_x, start_y, ui->label_tips->width(), ui->label_tips->height());
 }
-void MainWindow::init_windows(int start_width, int start_high) {
+void IpmWindow::init_windows(int start_width, int start_high) {
     /****************main_window*******************/
     setFixedSize(this->width(), this->height());
     /****************modle1***************/
@@ -115,9 +115,9 @@ void MainWindow::init_windows(int start_width, int start_high) {
     int model5_start_x = 0, model5_start_y = start_high + 5;
     init_model5_windows(model5_start_x, max(start_high + 50, 650)-45);
 }
-void MainWindow::update_windows() {
+void IpmWindow::update_windows() {
 }
-void MainWindow::active_windows() {
+void IpmWindow::active_windows() {
     Qt::WindowStates winStatus = Qt::WindowNoState;
     if (windowState() & Qt::WindowMaximized) {
         winStatus = Qt::WindowMaximized;
@@ -128,7 +128,7 @@ void MainWindow::active_windows() {
     activateWindow();
     raise();
 }
-void MainWindow::on_button_openpic_clicked() {
+void IpmWindow::on_button_openpic_clicked() {
     QString filename = QFileDialog::getOpenFileName(this, tr("选择图像"), "", tr("Images (*.png *.bmp *.jpg)"));
     if (filename.isEmpty()) return;
     QImage img;
@@ -160,7 +160,7 @@ void MainWindow::on_button_openpic_clicked() {
     ui->button_change->setEnabled(1);
     active_windows();
 }
-void MainWindow::on_button_clear_clicked() {
+void IpmWindow::on_button_clear_clicked() {
     ui->text_x1->clear();
     ui->text_y1->clear();
     ui->text_x2->clear();
@@ -172,7 +172,7 @@ void MainWindow::on_button_clear_clicked() {
     pic.click_cnt = 0;
     pic.change = 0;
 }
-void MainWindow::timerUpdate() { /* 定时器溢出处理 */
+void IpmWindow::timerUpdate() { /* 定时器溢出处理 */
     if (!pic.PIC_OPEN)return;
 
     if (pic.change) {
@@ -224,7 +224,7 @@ void MainWindow::timerUpdate() { /* 定时器溢出处理 */
         ui->label_tips->setText("用鼠标右键点击,从方形左下-右下-左上-右上选取四个点");
     }
 }
-void MainWindow::on_button_change_clicked() {
+void IpmWindow::on_button_change_clicked() {
     QString num_tmp;
     /**********************结果图基本信息***********************/
     num_tmp = ui->text_width->toPlainText();
@@ -268,10 +268,10 @@ void MainWindow::on_button_change_clicked() {
     change_view();
     pic.change = 1;
 }
-void MainWindow::on_action_2_triggered() {
+void IpmWindow::on_action_2_triggered() {
     qApp->quit();
 }
-void MainWindow::on_about_triggered() {
+void IpmWindow::on_about_triggered() {
     QMessageBox MBox;
     MBox.setWindowTitle("About RUBO IPM");
     MBox.setText("RUBO IPM 1.4.0");
@@ -281,15 +281,8 @@ void MainWindow::on_about_triggered() {
     QPushButton *agreeBut = MBox.addButton("Close", QMessageBox::AcceptRole);
     MBox.exec();
 }
-void MainWindow::on_open_triggered() {
+void IpmWindow::on_open_triggered() {
     on_button_openpic_clicked();
-}
-
-void MainWindow::on_pushButton_clicked()
-{
-
-    myw.show();
-
 }
 
 

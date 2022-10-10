@@ -3,8 +3,12 @@ debug/main.o
 debug/change-view.o
 debug/menu.o
 debug/rubo_label.o
-debug/window.o
+debug/screen.o
+debug/udipm.o
+debug/udm.o
 debug/qrc_rubo.o
 debug/moc_ipm.o
 debug/moc_menu.o
 debug/moc_rubo_label.o
+debug/moc_udipm.o
+debug/moc_udm.o
