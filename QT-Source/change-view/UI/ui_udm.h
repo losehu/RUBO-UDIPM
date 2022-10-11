@@ -44,7 +44,7 @@ public:
     QLabel *label_x;
     QLabel *label_y;
     QTextEdit *text_corner_width;
-    QTextEdit *text_corner_width_2;
+    QTextEdit *text_corner_high;
     QLabel *label_corner_width;
     QLabel *label_width_3;
     QMenuBar *menubar;
@@ -90,6 +90,7 @@ public:
         radioButton_pic = new QRadioButton(centralwidget);
         radioButton_pic->setObjectName("radioButton_pic");
         radioButton_pic->setGeometry(QRect(1030, 30, 118, 24));
+        radioButton_pic->setChecked(false);
         label_width = new QLabel(centralwidget);
         label_width->setObjectName("label_width");
         label_width->setGeometry(QRect(1000, 200, 91, 16));
@@ -105,9 +106,9 @@ public:
         text_corner_width = new QTextEdit(centralwidget);
         text_corner_width->setObjectName("text_corner_width");
         text_corner_width->setGeometry(QRect(1090, 140, 60, 30));
-        text_corner_width_2 = new QTextEdit(centralwidget);
-        text_corner_width_2->setObjectName("text_corner_width_2");
-        text_corner_width_2->setGeometry(QRect(1090, 90, 60, 30));
+        text_corner_high = new QTextEdit(centralwidget);
+        text_corner_high->setObjectName("text_corner_high");
+        text_corner_high->setGeometry(QRect(1090, 90, 60, 30));
         label_corner_width = new QLabel(centralwidget);
         label_corner_width->setObjectName("label_corner_width");
         label_corner_width->setGeometry(QRect(1000, 100, 91, 16));

@@ -25,26 +25,35 @@ DEFINES += QT_DEPRECATED_WARNINGS
 CONFIG += c++11
 
 SOURCES += \
-    ipm.cpp \
+    IPM/change-view.cpp \
+    IPM/ipm.cpp \
+    IPM/rubo_label.cpp \
+    MENU/menu.cpp \
+    UDIPM/udipm.cpp \
+    UDM/all.cpp \
+    UDM/distorted.cpp \
+    UDM/file.cpp \
+    UDM/udm.cpp \
         main.cpp \
-    change-view.cpp \
-    menu.cpp \
-    rubo_label.cpp \
-    screen.cpp \
-    udipm.cpp \
-    udm.cpp
+    screen.cpp
+
 
 HEADERS += \
+    IPM/change-view.h \
+    IPM/ipm.h \
+    IPM/rubo_label.h \
+    MENU/menu.h \
+    UDIPM/udipm.h \
+    UDM/all.h \
+    UDM/distorted.h \
+    UDM/file.h \
+    UDM/ty.h \
+    UDM/udm.h \
     UI/ipm.h \
     UI/menu.h \
-    change-view.h \
-    ipm.h \
-    menu.h \
-    rubo_label.h \
     screen.h \
-    ty.h \
-    udipm.h \
-    udm.h
+    ty.h
+
 
 FORMS += \
         ipm.ui \
@@ -63,7 +72,13 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 
 
-INCLUDEPATH +=C:\OPENCV\QT-BUILD\install\include
+INCLUDEPATH +=C:\OPENCV\QT-BUILD\install\include \
+ ./IPM \
+ ./UDM \
+ ./UDIPM \
+ ./MENU \
+ ./
+
 LIBS += C:\OPENCV\QT-BUILD\install\x64\mingw\lib\libopencv_*.a
 
 

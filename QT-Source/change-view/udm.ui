@@ -118,6 +118,9 @@
     <property name="text">
      <string>自动全图</string>
     </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
    </widget>
    <widget class="QLabel" name="label_width">
     <property name="geometry">
@@ -181,7 +184,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QTextEdit" name="text_corner_width_2">
+   <widget class="QTextEdit" name="text_corner_high">
     <property name="geometry">
      <rect>
       <x>1090</x>

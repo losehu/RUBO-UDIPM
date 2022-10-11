@@ -7,7 +7,7 @@
 *****************************************************************************/
 
 #include <memory>
-#include "../ipm.h"
+#include "../IPM/ipm.h"
 #include <QtGui/qtextcursor.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)

@@ -5,10 +5,10 @@
 #include "menu.h"
 #include "udm.h"
 #include "udipm.h"
-
+#include "qthread.h"
+#include "distorted.h"
 int main(int argc, char *argv[])
 {
-
     QApplication a(argc, argv);
     QRect screenRect = QGuiApplication::primaryScreen()->geometry();
 
@@ -28,6 +28,9 @@ int main(int argc, char *argv[])
        QObject::connect(&ipmw,SIGNAL(menushow()),&menuw,SLOT(receivemenu()));
        QObject::connect(&udmw,SIGNAL(menushow()),&menuw,SLOT(receivemenu()));
        QObject::connect(&udipmw,SIGNAL(menushow()),&menuw,SLOT(receivemenu()));
+
+
+
 
 
     return a.exec();

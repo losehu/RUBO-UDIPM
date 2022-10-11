@@ -7,7 +7,7 @@
 *****************************************************************************/
 
 #include <memory>
-#include "../udipm.h"
+#include "../UDIPM/udipm.h"
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'udipm.h' doesn't include <QObject>."
