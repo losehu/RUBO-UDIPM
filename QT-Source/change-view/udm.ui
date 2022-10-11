@@ -44,7 +44,7 @@
     <property name="geometry">
      <rect>
       <x>1040</x>
-      <y>370</y>
+      <y>430</y>
       <width>93</width>
       <height>29</height>
      </rect>
@@ -57,7 +57,7 @@
     <property name="geometry">
      <rect>
       <x>1040</x>
-      <y>430</y>
+      <y>490</y>
       <width>93</width>
       <height>29</height>
      </rect>
@@ -69,8 +69,8 @@
    <widget class="QTextEdit" name="text_width">
     <property name="geometry">
      <rect>
-      <x>1100</x>
-      <y>120</y>
+      <x>1090</x>
+      <y>190</y>
       <width>60</width>
       <height>30</height>
      </rect>
@@ -79,8 +79,8 @@
    <widget class="QTextEdit" name="text_high">
     <property name="geometry">
      <rect>
-      <x>1100</x>
-      <y>170</y>
+      <x>1090</x>
+      <y>240</y>
       <width>60</width>
       <height>30</height>
      </rect>
@@ -89,8 +89,8 @@
    <widget class="QTextEdit" name="text_x">
     <property name="geometry">
      <rect>
-      <x>1100</x>
-      <y>220</y>
+      <x>1090</x>
+      <y>290</y>
       <width>60</width>
       <height>30</height>
      </rect>
@@ -99,8 +99,8 @@
    <widget class="QTextEdit" name="text_y">
     <property name="geometry">
      <rect>
-      <x>1100</x>
-      <y>270</y>
+      <x>1090</x>
+      <y>340</y>
       <width>60</width>
       <height>30</height>
      </rect>
@@ -109,8 +109,8 @@
    <widget class="QRadioButton" name="radioButton_pic">
     <property name="geometry">
      <rect>
-      <x>1040</x>
-      <y>60</y>
+      <x>1030</x>
+      <y>30</y>
       <width>118</width>
       <height>24</height>
      </rect>
@@ -123,7 +123,7 @@
     <property name="geometry">
      <rect>
       <x>1000</x>
-      <y>130</y>
+      <y>200</y>
       <width>91</width>
       <height>16</height>
      </rect>
@@ -136,7 +136,7 @@
     <property name="geometry">
      <rect>
       <x>1000</x>
-      <y>180</y>
+      <y>250</y>
       <width>91</width>
       <height>16</height>
      </rect>
@@ -149,7 +149,7 @@
     <property name="geometry">
      <rect>
       <x>1000</x>
-      <y>230</y>
+      <y>300</y>
       <width>69</width>
       <height>20</height>
      </rect>
@@ -162,13 +162,59 @@
     <property name="geometry">
      <rect>
       <x>1000</x>
-      <y>280</y>
+      <y>350</y>
       <width>69</width>
       <height>20</height>
      </rect>
     </property>
     <property name="text">
      <string>竖直偏移:</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="text_corner_width">
+    <property name="geometry">
+     <rect>
+      <x>1090</x>
+      <y>140</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="text_corner_width_2">
+    <property name="geometry">
+     <rect>
+      <x>1090</x>
+      <y>90</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_corner_width">
+    <property name="geometry">
+     <rect>
+      <x>1000</x>
+      <y>100</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>横向角点数：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_width_3">
+    <property name="geometry">
+     <rect>
+      <x>1000</x>
+      <y>150</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>纵向角点数：</string>
     </property>
    </widget>
   </widget>
