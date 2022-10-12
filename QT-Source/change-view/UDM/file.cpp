@@ -2,6 +2,7 @@
 // Created by RUBO on 2022/10/6.
 //
 #include "file.h"
+bool path_check_ok=0;
 int get_picname(string dir,string pic_name[])
 {
 
@@ -62,18 +63,25 @@ vector<string> getFilesList(string dirpath) {
 vector<string> getFilesList(string dir)
 {
     vector<string> allPath;
+
+if(dir=="")
+{
+             path_check_ok=0;
+            return allPath;
+}
     // 在目录后面加上"\\*.*"进行第一次搜索
     string dir2 = dir + "\\*.*";
 
     intptr_t handle;
     _finddata_t findData;
-
-    handle = _findfirst(dir2.c_str(), &findData);
+handle = _findfirst(dir2.c_str(), &findData);
     if (handle == -1) {// 检查是否成功
-        cout << "can not found the file ... " << endl;
+//        cout << "can not found the file ... " << endl;
+         path_check_ok=0;
+         _findclose(handle);    // 关闭搜索句柄
         return allPath;
-    }
-    while (_findnext(handle, &findData) == 0)
+}
+    while (_findnext(handle, &findData) == 0&&handle != -1)
     {
         if (findData.attrib & _A_SUBDIR) //是否含有子目录
         {
@@ -92,6 +100,8 @@ vector<string> getFilesList(string dir)
         }
     }
     _findclose(handle);    // 关闭搜索句柄
+     path_check_ok=1;
+
     return allPath;
 }
 #endif

@@ -8,6 +8,7 @@
 #include "distorted.h"
 #include "QTimer"
 #include "QFuture"
+#include "udm.h"
 string dir;
         int conor_width ;
         int conor_high ;
@@ -15,6 +16,7 @@ string dir;
         double distorted_parameter[11];
 
 
+        string pic0_name;
 
 
 int get_distorted_mat(string pic_name[], string pic_name_ok[], int pic_num, int conor_width, int conor_high,
@@ -39,9 +41,9 @@ int get_distorted_mat(string pic_name[], string pic_name_ok[], int pic_num, int 
            /* 提取角点 */
            if (0 == findChessboardCorners(imageInput, board_size, image_points_buf)) {
                cout << filename << " 找不到角点\n"; //找不到角点
-           } else if (image_size.width != imageInput.cols) {
+           } else if (image_size.width != imageInput.cols||image_size.height != imageInput.rows) {
                cout << "图片尺寸不同" << endl;
-               exit(0);
+return -1;
            } else {
                Mat view_gray;
                cvtColor(imageInput, view_gray, COLOR_RGB2GRAY);
@@ -56,13 +58,12 @@ int get_distorted_mat(string pic_name[], string pic_name_ok[], int pic_num, int 
 
            }
        }
-       pic_num = ok_pic;
-   //    pic_num =  find_corner( pic_name, pic_name_ok, pic_num,  image_size, board_size ,   image_points_buf,  image_points_seq, conor_width, conor_high);
-       for(int i=0;i<ok_pic;i++)
-          pic_name[i]=pic_name_ok[i];
-       int total = image_points_seq.size();
+udm_pic.width=image_size.width;
+udm_pic.high=image_size.height;
 
-pic0_name=pic_name[0];
+       pic_num = ok_pic;
+       for(int i=0;i<ok_pic;i++)
+           pic_name[i]=pic_name_ok[i];    int total = image_points_seq.size();
        cout << "total = " << total << endl;
        cout << "角点提取完成！\n";
        //以下是摄像机标定
@@ -97,30 +98,9 @@ pic0_name=pic_name[0];
        }
        /* 开始标定 */
        calibrateCamera(object_points, image_points_seq, image_size, cameraMatrix, distCoeffs, rvecsMat, tvecsMat, 0);
-       cout << "标定完成！\n";
-       //对标定结果进行评价
-       cout << "开始评价标定结果………………\n";
-       double total_err = 0.0; /* 所有图像的平均误差的总和 */
-       double err = 0.0; /* 每幅图像的平均误差 */
-       vector<Point2f> image_points2; /* 保存重新计算得到的投影点 */
-       for (int i = 0; i < pic_num; i++) {
-           vector<Point3f> tempPointSet = object_points[i];
-           /* 通过得到的摄像机内外参数，对空间的三维点进行重新投影计算，得到新的投影点 */
-           projectPoints(tempPointSet, rvecsMat[i], tvecsMat[i], cameraMatrix, distCoeffs, image_points2);
-           /* 计算新的投影点和旧的投影点之间的误差*/
-           vector<Point2f> tempImagePoint = image_points_seq[i];
-           Mat tempImagePointMat = Mat(1, tempImagePoint.size(), CV_32FC2);
-           Mat image_points2Mat = Mat(1, image_points2.size(), CV_32FC2);
-           for (int j = 0; j < tempImagePoint.size(); j++) {
-               image_points2Mat.at<Vec2f>(0, j) = Vec2f(image_points2[j].x, image_points2[j].y);
-               tempImagePointMat.at<Vec2f>(0, j) = Vec2f(tempImagePoint[j].x, tempImagePoint[j].y);
-           }
-           err = norm(image_points2Mat, tempImagePointMat, NORM_L2);
-           total_err += err /= point_counts[i];
-       }
-       std::cout << "总体平均误差：" << total_err / pic_num << "像素" << endl;
-       std::cout << "评价完成！" << endl;
-       Mat rotation_matrix = Mat(3, 3, CV_32FC1, Scalar::all(0)); /* 保存每幅图像的旋转矩阵 */
+
+
+
        cout << "相机内参数矩阵：" << endl;
        cout << cameraMatrix << endl << endl;
        cout << "畸变系数：\n";
@@ -138,6 +118,77 @@ pic0_name=pic_name[0];
        parameter[8] = distCoeffs.at<double>(0, 4);
        parameter[9] = distCoeffs.at<double>(0, 2);
        parameter[10] = distCoeffs.at<double>(0, 3);
+       pic0_name=pic_name[0];
+
+
+
+       ///**********自动计算结果图大小**********/
+       int ImgWidth = (int) distorted_parameter[0];
+       int ImgHeight = (int) distorted_parameter[1];
+       double fx = distorted_parameter[2]
+       , fy = distorted_parameter[3]
+       , ux = distorted_parameter[4]
+       , uy = distorted_parameter[5]
+       , k1 = distorted_parameter[6]
+       , k2 = distorted_parameter[7]
+       , k3 = distorted_parameter[8]
+       , p1 = distorted_parameter[9]
+       , p2 = distorted_parameter[10];
+        udm_pic.max_x = -9999999, udm_pic.max_y = -9999999, udm_pic.min_x = 9999999, udm_pic.min_y = 9999999;
+       for (int i = 0; i < ImgHeight; i++) {
+           for (int j = 0; j < ImgWidth; j++) {
+               double xDistortion = (j - ux) / fx;
+               double yDistortion = (i - uy) / fy;
+
+               double xCorrected, yCorrected;
+
+               double x0 = xDistortion;
+               double y0 = yDistortion;
+               for (int j = 0; j < 10; j++) {
+                   double r2 = xDistortion * xDistortion + yDistortion * yDistortion;
+
+                   double distRadialA = 1 / (1. + k1 * r2 + k2 * r2 * r2 + k3 * r2 * r2 * r2);
+                   double distRadialB = 1.;
+
+                   double deltaX = 2. * p1 * xDistortion * yDistortion + p2 * (r2 + 2. * xDistortion * xDistortion);
+                   double deltaY = p1 * (r2 + 2. * yDistortion * yDistortion) + 2. * p2 * xDistortion * yDistortion;
+
+                   xCorrected = (x0 - deltaX) * distRadialA * distRadialB;
+                   yCorrected = (y0 - deltaY) * distRadialA * distRadialB;
+
+                   xDistortion = xCorrected;
+                   yDistortion = yCorrected;
+               }
+               xCorrected = xCorrected * fx + ux;
+               yCorrected = yCorrected * fy + uy;
+
+               if (i == 0 && j == 0) {
+
+                   udm_pic.min_x = min_int(udm_pic.min_x, xCorrected);
+                   udm_pic.min_y = min_int(udm_pic.min_y, yCorrected);//左上
+               }
+               if (i == 0 && j == ImgWidth - 1) {
+                   //右上
+                   udm_pic.min_y = min_int(udm_pic.min_y, yCorrected);
+                   udm_pic.max_x = max_int(udm_pic.min_x, xCorrected);
+
+               }
+               if (i == ImgHeight - 1 && j == 0) {
+                   //左下
+                   udm_pic.min_x = min_int(udm_pic.min_x, xCorrected);
+                   udm_pic.max_y = max_int(udm_pic.min_y, yCorrected);
+
+               }
+               if (i == ImgHeight - 1 && j == ImgWidth - 1) {
+                   //右下
+                   udm_pic.max_x = max_int(udm_pic.min_x, xCorrected);
+
+                   udm_pic.max_y = max_int(udm_pic.min_y, yCorrected);
+               }
+           }
+       }
+
+
        return ok_pic;
 
 

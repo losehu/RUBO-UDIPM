@@ -9,4 +9,6 @@ using namespace cv;
 using namespace std;
 int get_picname(string dir,string pic_name[]);
 vector<string> getFilesList(string dir);
+extern bool path_check_ok;
+
 #endif

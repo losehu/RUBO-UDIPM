@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1200</width>
-    <height>600</height>
+    <height>650</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -30,8 +30,8 @@
    <widget class="QLabel" name="label_tips">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>550</y>
+      <x>0</x>
+      <y>600</y>
       <width>811</width>
       <height>20</height>
      </rect>
@@ -218,6 +218,19 @@
     </property>
     <property name="text">
      <string>纵向角点数：</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_udm">
+    <property name="geometry">
+     <rect>
+      <x>1040</x>
+      <y>550</y>
+      <width>93</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>去畸变</string>
     </property>
    </widget>
   </widget>

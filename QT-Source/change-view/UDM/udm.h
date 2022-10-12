@@ -21,6 +21,9 @@ public:
 private slots:
 
     bool judge_int(QString a);
+    QImage Mat2QImage(const cv::Mat &mat);
+bool judge_int_no_warning(QString a);
+    bool judge_int_all(QString a) ;
 
      void receiveudm();
      void on_exit_triggered();
@@ -33,6 +36,8 @@ private slots:
 
      void on_pushButton_openpic_clicked();
 
+     void on_pushButton_udm_clicked();
+
 signals:
     void menushow();
 private:
@@ -42,9 +47,16 @@ public slots:
 
 
 };
-
+ struct udm_p {
+    int max_x,max_y,min_x,min_y;
+    int width, high;
+    int move_x,move_y;
+    string path;
+    bool find_file_path;
+    bool find_pic_path;
+} ;
+extern udm_p udm_pic;
 extern bool  alpha;
-extern string pic0_name;
 
 #endif // UDM_H
 

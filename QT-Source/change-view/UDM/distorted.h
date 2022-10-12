@@ -17,7 +17,7 @@ extern string dir;
 //cpp
   extern    double distorted_parameter[11];
 
-//  extern string pic0_name;
+  extern string pic0_name;
 
 
 

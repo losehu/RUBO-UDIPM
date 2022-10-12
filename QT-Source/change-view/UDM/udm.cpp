@@ -13,9 +13,10 @@
 #include "QFuture"
 #include "distorted.h"
 #include "qstring"
+#include"QImage"
 #include<QRegularExpression>
  bool  alpha=1;
- string pic0_name;
+ udm_p udm_pic;
 
 void UdmWindow::receiveudm()
 {
@@ -47,12 +48,15 @@ UdmWindow::UdmWindow(QWidget *parent) :
 
 
 
-//   ui->radioButton_pic->setChecked(1);
-//        ui->text_high->setEnabled(0);
-//        ui->text_width->setEnabled(0);
-//        ui->text_x->setEnabled(0);
-//        ui->text_y->setEnabled(0);
-//        alpha=1;
+   ui->radioButton_pic->setChecked(1);
+        ui->text_high->setEnabled(0);
+        ui->text_width->setEnabled(0);
+        ui->text_x->setEnabled(0);
+        ui->text_y->setEnabled(0);
+        alpha=1;
+
+        udm_pic.find_file_path=0;
+         udm_pic.find_pic_path=0;
 
 }
 UdmWindow::~UdmWindow() {
@@ -99,6 +103,14 @@ void UdmWindow::on_radioButton_pic_clicked()
         ui->text_y->setEnabled(0);
         alpha=1;
 
+
+
+        if(udm_pic.find_file_path&&
+                   udm_pic.find_pic_path)
+        {
+            on_pushButton_udm_clicked();
+
+        }
 }else
     {
         ui->text_high->setEnabled(1);
@@ -106,7 +118,21 @@ void UdmWindow::on_radioButton_pic_clicked()
         ui->text_x->setEnabled(1);
         ui->text_y->setEnabled(1);
         alpha=0;
+        if(udm_pic.find_file_path&&
+                   udm_pic.find_pic_path)
+        {
+          QString  num_tmp = ui->text_width->toPlainText();
+            if (!judge_int_no_warning(num_tmp))return;
+              num_tmp = ui->text_high->toPlainText();
+              if (!judge_int_no_warning(num_tmp))return;
+                num_tmp = ui->text_x->toPlainText();
+                if (!judge_int_no_warning(num_tmp))return;
+                  num_tmp = ui->text_y->toPlainText();
+                  if (!judge_int_no_warning(num_tmp))return;
 
+            on_pushButton_udm_clicked();
+
+        }
     }
 }
 
@@ -139,6 +165,7 @@ void UdmWindow::timerUpdate() { /* 定时器溢出处理 */
 
 void UdmWindow::on_pushButton_opendir_clicked()
 {
+
     QString  num_tmp = ui->text_corner_width->toPlainText();
       if (!judge_int(num_tmp))return;
       conor_width = (int) (num_tmp.toInt());
@@ -149,17 +176,6 @@ void UdmWindow::on_pushButton_opendir_clicked()
         conor_high = (int) (num_tmp.toInt());
 
 
-    if(!alpha){
-          num_tmp = ui->text_width->toPlainText();
-          if (!judge_int(num_tmp))return;
-            num_tmp = ui->text_high->toPlainText();
-            if (!judge_int(num_tmp))return;
-              num_tmp = ui->text_x->toPlainText();
-              if (!judge_int(num_tmp))return;
-                num_tmp = ui->text_y->toPlainText();
-                if (!judge_int(num_tmp))return;
-    }
-
 
 
     QString filePath = QFileDialog::getExistingDirectory(this, "请选择文件保存路径...", "./");
@@ -169,20 +185,32 @@ void UdmWindow::on_pushButton_opendir_clicked()
 
      //读取每一幅图像，从中提取出角点，然后对角点进行亚像素精确化
  /*******读取文件夹下所有图片************/
-      vector<string> allFileList = getFilesList(dir);
+vector<string> allFileList = getFilesList(dir);
+      if(! path_check_ok)return;
       int pic_num = allFileList.size();
-      string pic_name[pic_num]; //????????
-      pic_num = get_picname(dir, pic_name);
+      if(pic_num<10){
+              QMessageBox::critical(this, "错误", "图片数目太少");
 
-  /********???????************/
+          return;}
+      string pic_name[pic_num];
+      pic_num = get_picname(dir, pic_name);
+if(pic_num==-1)return;
+
+
+
+
+
+
       string pic_name_ok[pic_num];
       pic_num = get_distorted_mat(pic_name, pic_name_ok, pic_num, conor_width, conor_high, distorted_parameter);
-       ui->label_tips->setText("已生成内參矩陣，選擇圖片進行去畸變");
+       ui->label_tips->setText("已生成内参矩阵，请选择图片去畸变");
 
 
 
 
 //C:\Users\RUPC\Desktop\Dedistortion\img7
+       udm_pic.find_file_path=1;
+
 
 }
 bool UdmWindow::judge_int(QString a) {
@@ -192,9 +220,32 @@ bool UdmWindow::judge_int(QString a) {
     }
     return 1;
 }
-
+bool UdmWindow::judge_int_no_warning(QString a) {
+    if (!a.contains(QRegularExpression("^\\d+$"))) {
+        return 0;
+    }
+    return 1;
+}
+bool isDegital(string str) {
+    for (int i = 0;i < str.size();i++) {
+        if (str.at(i) == '-' && str.size() > 1)  // 有可能出现负数
+            continue;
+        if (str.at(i) > '9' || str.at(i) < '0')
+            return false;
+    }
+    return true;
+}
+bool UdmWindow::judge_int_all(QString a) {
+    string aa=(const char*)a.toLocal8Bit();
+    if (!isDegital(aa)) {
+        QMessageBox::critical(this, "错误", "参数输入错误！");
+        return 0;
+    }
+    return 1;
+}
 void UdmWindow::on_pushButton_openpic_clicked()
 {
+
     QString filename_pic = QFileDialog::getOpenFileName(this, tr("选择图像"), "", tr("Images (*.png *.bmp *.jpg)"));
     if (filename_pic.isEmpty()) return;
     QImage img;
@@ -203,8 +254,82 @@ void UdmWindow::on_pushButton_openpic_clicked()
         QMessageBox::information(this, tr("打开图像失败"), tr("打开图像失败!"));
         return;
     }
-       string name_pic=filename_pic.toLocal8Bit().toStdString();//设置为可以读取中文路径
+udm_pic.path=filename_pic.toLocal8Bit().toStdString();
 
+ udm_pic.find_pic_path=1;
+
+
+
+}
+
+QImage UdmWindow::Mat2QImage(const cv::Mat &mat)
+{
+
+        // 8-bits unsigned, NO. OF CHANNELS = 1
+        if(mat.type() == CV_8UC1)
+        {
+            QImage image(mat.cols, mat.rows, QImage::Format_Indexed8);
+            image.setColorCount(256);
+            for(int i = 0; i < 256; i++)
+            {
+                image.setColor(i, qRgb(i, i, i));
+            }
+            uchar *pSrc = mat.data;
+            for(int row = 0; row < mat.rows; row ++)
+            {
+                uchar *pDest = image.scanLine(row);
+                memcpy(pDest, pSrc, mat.cols);
+                pSrc += mat.step;
+            }
+            return image;
+        }
+        // 8-bits unsigned, NO. OF CHANNELS = 3
+        else if(mat.type() == CV_8UC3)
+        {
+            // Copy input Mat
+            cv::cvtColor(mat,mat,cv::COLOR_BGR2RGB);
+            const uchar *pSrc = (const uchar*)mat.data;
+            QImage image(pSrc, mat.cols, mat.rows, mat.step, QImage::Format_RGB888);
+            //image = image.rgbSwapped();
+            return image.copy();
+        }
+        else if(mat.type() == CV_8UC4)
+        {
+            // Copy input Mat
+            const uchar *pSrc = (const uchar*)mat.data;
+            QImage image(pSrc, mat.cols, mat.rows, mat.step, QImage::Format_ARGB32);
+            return image.copy();
+        }
+        else
+        {
+            qDebug() << "ERROR: Mat could not be converted to QImage.";
+            return QImage();
+        }
+}
+
+void UdmWindow::on_pushButton_udm_clicked()
+{    QString num_tmp;
+
+    if(!alpha){
+          num_tmp = ui->text_width->toPlainText();
+          if (!judge_int(num_tmp))return;
+          udm_pic.width= (int) (num_tmp.toInt());
+
+
+            num_tmp = ui->text_high->toPlainText();
+            if (!judge_int(num_tmp))return;
+            udm_pic.high= (int) (num_tmp.toInt());
+
+              num_tmp = ui->text_x->toPlainText();
+              if (!judge_int_all(num_tmp))return;
+              udm_pic.move_x= (int) (num_tmp.toInt());
+
+                num_tmp = ui->text_y->toPlainText();
+
+                if (!judge_int_all(num_tmp))return;
+                udm_pic.move_y= (int) (num_tmp.toInt());
+
+    }
 
 
 
@@ -226,78 +351,18 @@ void UdmWindow::on_pushButton_openpic_clicked()
         string InputPath = pic0_name;
         cv::Mat img_tmp = cv::imread(InputPath);
         cvtColor(img_tmp, img_tmp, COLOR_RGB2GRAY);
-    //
-    //
-        ///**********自动计算结果图大小**********/
 
-        int max_x = -9999999, max_y = -9999999, min_x = 9999999, min_y = 9999999;
-        for (int i = 0; i < ImgHeight; i++) {
-            for (int j = 0; j < ImgWidth; j++) {
-                double xDistortion = (j - ux) / fx;
-                double yDistortion = (i - uy) / fy;
-
-                double xCorrected, yCorrected;
-
-                double x0 = xDistortion;
-                double y0 = yDistortion;
-                for (int j = 0; j < 10; j++) {
-                    double r2 = xDistortion * xDistortion + yDistortion * yDistortion;
-
-                    double distRadialA = 1 / (1. + k1 * r2 + k2 * r2 * r2 + k3 * r2 * r2 * r2);
-                    double distRadialB = 1.;
-
-                    double deltaX = 2. * p1 * xDistortion * yDistortion + p2 * (r2 + 2. * xDistortion * xDistortion);
-                    double deltaY = p1 * (r2 + 2. * yDistortion * yDistortion) + 2. * p2 * xDistortion * yDistortion;
-
-                    xCorrected = (x0 - deltaX) * distRadialA * distRadialB;
-                    yCorrected = (y0 - deltaY) * distRadialA * distRadialB;
-
-                    xDistortion = xCorrected;
-                    yDistortion = yCorrected;
-                }
-                xCorrected = xCorrected * fx + ux;
-                yCorrected = yCorrected * fy + uy;
-
-                if (i == 0 && j == 0) {
-
-                    min_x = min_int(min_x, xCorrected);
-                    min_y = min_int(min_y, yCorrected);//左上
-                }
-                if (i == 0 && j == ImgWidth - 1) {
-                    //右上
-                    min_y = min_int(min_y, yCorrected);
-                    max_x = max_int(min_x, xCorrected);
-
-                }
-                if (i == ImgHeight - 1 && j == 0) {
-                    //左下
-                    min_x = min_int(min_x, xCorrected);
-                    max_y = max_int(min_y, yCorrected);
-
-                }
-                if (i == ImgHeight - 1 && j == ImgWidth - 1) {
-                    //右下
-                    max_x = max_int(min_x, xCorrected);
-
-                    max_y = max_int(min_y, yCorrected);
-
-                }
-
-            }
-
-
-        }
 
 
         int ImgWidth_out;
         int ImgHeight_out;
         if (alpha) {
-            ImgWidth_out = max_x - min_x;
-            ImgHeight_out = max_y - min_y;
+            ImgWidth_out = udm_pic.max_x - udm_pic.min_x;
+            ImgHeight_out = udm_pic.max_y - udm_pic.min_y;
 
         } else {
-            ImgWidth_out = ImgWidth;
-            ImgHeight_out = ImgHeight;
+            ImgWidth_out = udm_pic.width ;
+            ImgHeight_out = udm_pic.high ;
         }
         /**********定义映射矩阵**************/
         unsigned char back_color = 255;
@@ -310,19 +375,24 @@ void UdmWindow::on_pushButton_openpic_clicked()
         Mat out1 = Mat(ImgHeight_out, ImgWidth_out, CV_8UC1);
 
 
-        int max_width = max_x;
-        int max_high = max_y;
+        int max_width = udm_pic.max_x;
+        int max_high = udm_pic.max_y;
         int move_x, move_y;
         if (alpha) {
             move_x = (ImgWidth_out - max_width);
             move_y = (ImgHeight_out - max_high);
         } else {
-            move_x = 0;
-            move_y = 100;
+            move_x = udm_pic.move_x;
+            move_y = udm_pic.move_y;
         }
         cout << "move:" << move_x << "\t" << move_y << endl;
 
         cout << "size:" << ImgHeight_out << "\t" << ImgWidth_out << endl;
+         for(int i=0;i<ImgHeight_out;i++)
+
+             for (int j = 0; j < ImgWidth_out; j++)
+                 distorted_img[i ][j ]=&back_color;
+
 
 
         for (int i = -move_y; i < ImgHeight_out; i++) {
@@ -354,9 +424,9 @@ void UdmWindow::on_pushButton_openpic_clicked()
                 }
             }
         }
-                 img_tmp = cv::imread(name_pic);
-    //        /Users/rubo/Downloads/萝老师图包2/0.jpg
-    //        cv::Mat img_tmp = cv::imread(pic_name[p]);
+
+                img_tmp = cv::imread(udm_pic.path);
+
             cvtColor(img_tmp, img_tmp, COLOR_RGB2GRAY);
 
             for (int i = 0; i < ImgHeight; i++)
@@ -370,16 +440,12 @@ void UdmWindow::on_pushButton_openpic_clicked()
             for (int i = 0; i < ImgHeight_out; i++)
                 for (int j = 0; j < ImgWidth_out; j++)
                     out1.at<uchar>(i, j) = *distorted_img[i][j];
-            cv::imshow("ram", img_tmp);
 
-            cv::imshow("ou1", out1);
-            cv::waitKey(0);
+            cv::imshow("img", img_tmp);
 
 
 
-
-
-
+            ui->label_pic1->setPixmap(QPixmap::fromImage(Mat2QImage(out1).scaled(ui->label_pic1->size())));
 
 
 }
