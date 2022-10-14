@@ -1,5 +1,7 @@
 # RUBO-UDIPM
-
+提供了能同时完成去畸变与逆透视图像处理的上位机软件
+去畸变教程：https://blog.csdn.net/wu58430/article/details/127324103
+逆透视教程：https://blog.csdn.net/wu58430/article/details/126317900
 如需要上位机程序,请下载Release。
 
 如需要上位机程序,请下载释放
