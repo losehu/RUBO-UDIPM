@@ -1,0 +1,17 @@
+debug/change-view.o
+debug/ipm.o
+debug/rubo_label.o
+debug/menu.o
+debug/udipm.o
+debug/all.o
+debug/distorted.o
+debug/file.o
+debug/udm.o
+debug/main.o
+debug/screen.o
+debug/qrc_rubo.o
+debug/moc_ipm.o
+debug/moc_rubo_label.o
+debug/moc_menu.o
+debug/moc_udipm.o
+debug/moc_udm.o
