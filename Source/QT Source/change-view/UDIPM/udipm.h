@@ -24,10 +24,15 @@ private slots:
 
      void on_action_triggered();
 
+     void on_button_clear_2_clicked();
+
+     void on_button_opendir_clicked();
+
 signals:
     void menushow();
 };
-
+using namespace cv;
+using namespace std;
 
 #endif // UDIPM_H
 

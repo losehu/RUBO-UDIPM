@@ -400,12 +400,13 @@ void UdmWindow::on_pushButton_udm_clicked()
         , p1 = distorted_parameter[9]
         , p2 = distorted_parameter[10];
 
-
+for(int i=0;i<10;i++)
+    cout<<distorted_parameter[i]<<","<<endl;
         string InputPath = udm_pic.pic0_name;
         cv::Mat img_tmp = cv::imread(InputPath);
         cvtColor(img_tmp, img_tmp, COLOR_RGB2GRAY);
 
-
+cout<<InputPath<<endl;
 
         int ImgWidth_out;
         int ImgHeight_out;
@@ -437,6 +438,7 @@ void UdmWindow::on_pushButton_udm_clicked()
         cout << "move:" << move_x << "\t" << move_y << endl;
 
         cout << "size:" << ImgHeight_out << "\t" << ImgWidth_out << endl;
+         cout << "size:" << ImgHeight<< "\t" << ImgWidth << endl;
 
           img_tmp = cv::imread(udm_pic.path);
 
