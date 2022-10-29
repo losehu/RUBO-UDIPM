@@ -47,7 +47,7 @@ void init_para() {
 void out_to_clip(Mat un_warpMatrix)
 {
     QClipboard *clipboard = QApplication::clipboard();
-string out_mat="";
+string out_mat="double change_un_Mat[3][3] =";
 for(int i=0; i<un_warpMatrix.rows; i++){
     if(i==0) out_mat += "{{";
    for(int j=0; j<un_warpMatrix.cols; j++)

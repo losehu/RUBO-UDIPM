@@ -35,7 +35,7 @@ void ImagePerspective_Init(void) {
 
 
     /*********************??******************************/
-   
+
     double fx = cameraMatrix[0][0]
     , fy = cameraMatrix[1][1]
     , ux = cameraMatrix[0][2]
@@ -49,11 +49,11 @@ void ImagePerspective_Init(void) {
 
 
 
-  
+
     int move_x=move_xy[0], move_y=move_xy[1];
 
-    for (int i = -move_y; i < RESULT_ROW; i++) {
-        for (int j = -move_x; j < RESULT_COL; j++) {
+    for (int i = -move_y; i < RESULT_ROW-move_y; i++) {
+        for (int j = -move_x; j < RESULT_COL-move_x; j++) {
             double xCorrected = (j - ux) / fx;
             double yCorrected = (i - uy) / fy;
             double xDistortion, yDistortion;
@@ -66,7 +66,7 @@ void ImagePerspective_Init(void) {
             yDistortion = yCorrected * deltaRa * deltaRb + deltaTy;
             xDistortion = xDistortion * fx + ux;
             yDistortion = yDistortion * fy + uy;
-            if (i + move_y >= 0 && i + move_y < RESULT_ROW && j + move_x >= 0 && j + move_x <= RESULT_COL) {
+            if (i + move_y >= 0 && i + move_y < RESULT_ROW && j + move_x >= 0 && j + move_x < RESULT_COL) {
                 if (yDistortion >= 0 && yDistortion < USED_ROW && xDistortion >= 0 && xDistortion < USED_COL) {
                     PerImg_ip[i + move_y][j + move_x] = &mt9v03x_image_dvp[(int) yDistortion][(int) xDistortion];
                 } else

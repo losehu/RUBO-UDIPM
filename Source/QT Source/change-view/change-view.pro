@@ -29,6 +29,7 @@ SOURCES += \
     IPM/ipm.cpp \
     IPM/rubo_label.cpp \
     MENU/menu.cpp \
+    UDIPM/change.cpp \
     UDIPM/udipm.cpp \
     UDM/all.cpp \
     UDM/distorted.cpp \
@@ -43,6 +44,7 @@ HEADERS += \
     IPM/ipm.h \
     IPM/rubo_label.h \
     MENU/menu.h \
+    UDIPM/change.h \
     UDIPM/udipm.h \
     UDM/all.h \
     UDM/distorted.h \
@@ -88,7 +90,7 @@ TARGET="RUBO UDIPM"
 
 
 #版本信息
-VERSION = 1.5.0
+VERSION = 1.6.0
 
 #图标
 

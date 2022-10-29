@@ -1,0 +1,94 @@
+//
+// Created by RUPC on 2022/10/29.
+//
+#define RESULT_ROW 100 //结果图的行列
+#define RESULT_COL 114
+#define         USED_ROW                120  //用于变换图的行列
+#define         USED_COL                188
+typedef unsigned char uint8_t;                                              // 无符号  8 bits
+uint8_t *PerImg_ip[RESULT_ROW][RESULT_COL];
+#define PER_IMG     mt9v03x_image_dvp//mt9v03x_image_dvp:用于透视变换的图像 也可以使用二值化图
+#define ImageUsed   *PerImg_ip//*PerImg_ip定义使用的图像，ImageUsed为用于巡线和识别的图像
+static uint8_t BlackColor = 255;	//无内容部分像素值
+/******************变换参数******************************/
+//去畸变参数
+double cameraMatrix[3][3] = {{296.482019, 0.000000,   152.664982},
+                             {0.000000,   286.375269, 104.540031},
+                             {0.000000,   0.000000,   1.000000}};
+double distCoeffs[5] = {-0.459946, 0.283675, 0.002304, 0.002566, -0.109265};
+int move_xy[2] = {10, 0};
+//逆透视参数
+double change_un_Mat[3][3] = {{2.936703,  0.314530, -60.814898},
+                              {-0.263326, 2.308885, -108.340381},
+                              {-0.000835, 0.000896, 0.969316}};
+/*******************************************************/
+void find_xy(int x, int y, int local[2]) {
+    double fx = cameraMatrix[0][0]
+    , fy = cameraMatrix[1][1]
+    , ux = cameraMatrix[0][2]
+    , uy = cameraMatrix[1][2]
+    , k1 = distCoeffs[0]
+    , k2 = distCoeffs[1]
+    , k3 = distCoeffs[4]
+    , p1 = distCoeffs[2]
+    , p2 = distCoeffs[3];
+    double xCorrected = (x - ux) / fx;
+    double yCorrected = (y - uy) / fy;
+    double xDistortion, yDistortion;
+    double r2 = xCorrected * xCorrected + yCorrected * yCorrected;
+    double deltaRa = 1. + k1 * r2 + k2 * r2 * r2 + k3 * r2 * r2 * r2;
+    double deltaRb = 1 / (1.);
+    double deltaTx = 2. * p1 * xCorrected * yCorrected + p2 * (r2 + 2. * xCorrected * xCorrected);
+    double deltaTy = p1 * (r2 + 2. * yCorrected * yCorrected) + 2. * p2 * xCorrected * yCorrected;
+    xDistortion = xCorrected * deltaRa * deltaRb + deltaTx;
+    yDistortion = yCorrected * deltaRa * deltaRb + deltaTy;
+    xDistortion = xDistortion * fx + ux;
+    yDistortion = yDistortion * fy + uy;
+    if (yDistortion >= 0 && yDistortion < USED_ROW && xDistortion >= 0 && xDistortion < USED_COL) {
+        local[0] = (int) yDistortion;
+        local[1] = (int) xDistortion;
+    } else {
+        local[0] = -1;
+        local[1] = -1;
+    }
+}
+
+void find_xy1(int x, int y, int local[2]) {
+    int local_x = (int) ((change_un_Mat[0][0] * x
+                          + change_un_Mat[0][1] * y + change_un_Mat[0][2])
+                         / (change_un_Mat[2][0] * x + change_un_Mat[2][1] * y
+                            + change_un_Mat[2][2]));
+    int local_y = (int) ((change_un_Mat[1][0] * x
+                          + change_un_Mat[1][1] * y + change_un_Mat[1][2])
+                         / (change_un_Mat[2][0] * x + change_un_Mat[2][1] * y
+                            + change_un_Mat[2][2]));
+    if (local_x
+        >= 0 && local_y >= 0) {
+        local[0] = local_y;
+        local[1] = local_x;
+    } else {
+        local[0] = -1;
+        local[1] = -1;
+    }
+}
+
+void ImageChange_Init() {
+    for (int i = 0; i < RESULT_ROW; i++) {
+        for (int j = 0; j < RESULT_COL; j++) {
+            int local_xy[2] = {-1};
+            find_xy1(j, i, local_xy);
+            if (local_xy[0] != -1 && local_xy[0] != -1) {
+                int local_xy1[2] = {-1};
+                find_xy(local_xy[1] - move_xy[0], local_xy[0] - move_xy[1], local_xy1);
+                if (local_xy1[0] != -1 && local_xy1[1] != -1) {
+                    PerImg_ip[i][j] = &mt9v03x_image_dvp[local_xy1[0]][local_xy1[1]];
+                } else PerImg_ip[i][j] = &BlackColor;
+            } else PerImg_ip[i][j] = &BlackColor;
+        }
+    }
+}
+/*ImageUsed[0][0]代表图像左上角的值*/
+
+/*完成摄像头初始化后，调用一次ImagePerspective_Init，此后，直接调用ImageUsed   即为去畸变结果*/
+
+

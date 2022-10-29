@@ -496,7 +496,6 @@ cout<<InputPath<<endl;
              init_windows(pic.show_width, pic.show_high); //1200--940 600-600
              ui->label_pic1->setGeometry(ui->label_pic1->x(), ui->label_pic1->y(), pic.show_width, pic.show_high);
 
-
             ui->label_pic1->setPixmap(QPixmap::fromImage(Mat2QImage(out1).scaled(ui->label_pic1->size())));
 
              if(alpha){
@@ -526,6 +525,8 @@ void UdmWindow::on_save_triggered()
 
         if (!filename_pic.isNull())
         {
+            cvtColor(out1, out1, COLOR_BGR2RGB);
+
               Mat2QImage(out1).save(filename_pic,"BMP");
         }
 

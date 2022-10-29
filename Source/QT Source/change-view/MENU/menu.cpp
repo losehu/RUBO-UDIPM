@@ -38,11 +38,6 @@ void MenuWindow::on_pushButton_clicked()
 
             this->hide();//隐藏test窗口
             emit udmshow();
-    }else if(ui->radioButton_udipm->isChecked())
-    {
-
-            this->hide();//隐藏test窗口
-            emit udipmshow();
     }else
     {
         QMessageBox::information(this, tr("错误"), tr("请选择图像处理方案!"));

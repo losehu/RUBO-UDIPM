@@ -6,9 +6,9 @@ void show_about()
 {
     QMessageBox MBox;
     MBox.setWindowTitle("About RUBO UDIPM");
-    MBox.setText("RUBO UDIPM 1.5.0");
+    MBox.setText("RUBO UDIPM 1.6.0");
     MBox.setInformativeText(
-            "Based on Qt 6.3.1 (MSVC 2019, x86_64)\n\nBuilt on Oct 14 2022 19:15:33\n\nFrom revision 1.5.0\n\nChecked by RUBO\n\nTHIS PROGRAM IS ONLY PROVIDED FOR LEARNING AND\nCOMMUNICATION, AND HAS NOTHING TO DOWITH ANY\nSCHOOL OR ORGANIZATION. ANY FORM OF COMMERCIAL\nUSE IS PROHIBITED.");
+            "Based on Qt 6.3.1 (MSVC 2019, x86_64)\n\nBuilt on Oct 29 2022 21:49:33\n\nFrom revision 1.6.0\n\nChecked by RUBO\n\nTHIS PROGRAM IS ONLY PROVIDED FOR LEARNING AND\nCOMMUNICATION, AND HAS NOTHING TO DOWITH ANY\nSCHOOL OR ORGANIZATION. ANY FORM OF COMMERCIAL\nUSE IS PROHIBITED.");
     MBox.setIconPixmap(QPixmap(":RUBO1-small.png"));
     QPushButton *agreeBut = MBox.addButton("Close", QMessageBox::AcceptRole);
     MBox.exec();

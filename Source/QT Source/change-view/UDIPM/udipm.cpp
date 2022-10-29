@@ -54,22 +54,7 @@ void UdipmWindow::on_button_clear_2_clicked()
 
 void UdipmWindow::on_button_opendir_clicked()
 {
-    QString filePath = QFileDialog::getExistingDirectory(this, "选择图片文件夹路径...", "./");
-     string dir=filePath.toLocal8Bit().toStdString();
 
-
-
-vector<string> allFileList = getFilesList(dir);
-      if(! path_check_ok)return;
-      int pic_num = allFileList.size();
-      if(pic_num<10){
-              QMessageBox::critical(this, "错误", "图片数目太少");
-
-          return;
-      }
-      string pic_name[pic_num];
-      pic_num = get_picname(dir, pic_name);
-if(pic_num==-1)return;
 
 
 

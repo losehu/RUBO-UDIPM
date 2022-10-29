@@ -311,6 +311,8 @@ void IpmWindow::on_save_triggered()
         if (!filename_pic.isNull())
         {
             //fileName是文件名
+           // cvtColor(src1, src1, COLOR_BGR2RGB);
+
              Mat2QImage(src1).save(filename_pic,"BMP");
         }
 }
