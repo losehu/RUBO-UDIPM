@@ -42,10 +42,15 @@ Only for competition, learning and communication, not for commercial or paid tea
 
 特别鸣谢
         华北电力大学（保定）欧 da jun
+	
         广东工业大学 刘 jun fan
+	
         安徽财经大学 陈 xin yun
+	
         山东农业工程学院 刘 hao xiang
+	
         哈尔滨工程大学
+	
         17届东北林业大学智能车战队
 
 感谢TWU的兄弟提供的测试集，希望作为透视变换最快速度的指针映射法能够帮助更多队伍在智能车竞赛上大放光彩
