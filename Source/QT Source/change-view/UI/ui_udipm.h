@@ -58,7 +58,7 @@ public:
     QTextEdit *text_len;
     QLabel *label_ysite;
     QTextEdit *text_y3;
-    QPushButton *button_clear_2;
+    QPushButton *button_opendir;
     QMenuBar *menubar;
     QMenu *menu;
     QStatusBar *statusbar;
@@ -163,9 +163,9 @@ public:
         text_y3 = new QTextEdit(centralwidget);
         text_y3->setObjectName("text_y3");
         text_y3->setGeometry(QRect(1130, 320, 60, 30));
-        button_clear_2 = new QPushButton(centralwidget);
-        button_clear_2->setObjectName("button_clear_2");
-        button_clear_2->setGeometry(QRect(1050, 420, 93, 28));
+        button_opendir = new QPushButton(centralwidget);
+        button_opendir->setObjectName("button_opendir");
+        button_opendir->setGeometry(QRect(1050, 420, 93, 28));
         UdipmWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(UdipmWindow);
         menubar->setObjectName("menubar");
@@ -218,7 +218,7 @@ public:
         button_clear->setText(QCoreApplication::translate("UdipmWindow", "\346\270\205\351\231\244", nullptr));
         button_openpic->setText(QCoreApplication::translate("UdipmWindow", "\346\211\223\345\274\200\345\233\276\347\211\207", nullptr));
         label_ysite->setText(QCoreApplication::translate("UdipmWindow", "\346\226\271\345\275\242\344\270\255\345\277\203\350\267\235\351\241\266\351\203\250\345\203\217\347\264\240\357\274\232", nullptr));
-        button_clear_2->setText(QCoreApplication::translate("UdipmWindow", "\346\240\207\345\256\232\345\233\276\350\267\257\345\276\204", nullptr));
+        button_opendir->setText(QCoreApplication::translate("UdipmWindow", "\346\240\207\345\256\232\345\233\276\350\267\257\345\276\204", nullptr));
         menu->setTitle(QCoreApplication::translate("UdipmWindow", "\346\226\207\344\273\266", nullptr));
     } // retranslateUi
 

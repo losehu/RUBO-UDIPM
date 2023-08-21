@@ -1,10 +1,10 @@
 #include <windows.h>
 
-IDI_ICON1	ICON	"C:\\Users\\RUPC\\Desktop\\github\\RUBO-IPM\\QT-Source\\change-view\\RUBO1-tou.ico"
+IDI_ICON1	ICON	"C:\\Users\\RUPC\\Desktop\\RUBO-UDIPM\\Source\\QT Source\\change-view\\RUBO1-tou.ico"
 
 VS_VERSION_INFO VERSIONINFO
-	FILEVERSION 1,5,0,0
-	PRODUCTVERSION 1,5,0,0
+	FILEVERSION 1,6,0,0
+	PRODUCTVERSION 1,6,0,0
 	FILEFLAGSMASK 0x3fL
 #ifdef _DEBUG
 	FILEFLAGS VS_FF_DEBUG
@@ -21,11 +21,11 @@ VS_VERSION_INFO VERSIONINFO
 			BEGIN
 				VALUE "CompanyName", "RUBO\0"
 				VALUE "FileDescription", "MADE BY RUBO\0"
-				VALUE "FileVersion", "1.5.0.0\0"
+				VALUE "FileVersion", "1.6.0.0\0"
 				VALUE "LegalCopyright", "RUBO\0"
 				VALUE "OriginalFilename", "change-view.exe\0"
 				VALUE "ProductName", "RUBO UDIPM\0"
-				VALUE "ProductVersion", "1.5.0.0\0"
+				VALUE "ProductVersion", "1.6.0.0\0"
 				VALUE "InternalName", "\0"
 				VALUE "Comments", "\0"
 				VALUE "LegalTrademarks", "\0"

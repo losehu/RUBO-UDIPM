@@ -8,7 +8,7 @@ QT       += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = change-view
+TARGET = RUBO_UDIPM
 TEMPLATE = app
 
 # The following define makes your compiler emit warnings if you use
@@ -86,11 +86,11 @@ LIBS += C:\OPENCV\QT-BUILD\install\x64\mingw\lib\libopencv_*.a
 
 
 #可执行文件名称
-TARGET="RUBO UDIPM"
+TARGET="RUBO_UDIPM"
 
 
 #版本信息
-VERSION = 1.6.0
+VERSION = 1.8.0
 
 #图标
 

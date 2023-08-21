@@ -5,6 +5,8 @@
 #define RESULT_COL 114
 #define         USED_ROW                120  //用于变换图的行列
 #define         USED_COL                188
+#define	TEMP_ROW	120	//去畸变后的行列
+#define	TEMP_COL	180
 typedef unsigned char uint8_t;                                              // 无符号  8 bits
 uint8_t *PerImg_ip[RESULT_ROW][RESULT_COL];
 #define PER_IMG     mt9v03x_image_dvp//mt9v03x_image_dvp:用于透视变换的图像 也可以使用二值化图
@@ -63,7 +65,7 @@ void find_xy1(int x, int y, int local[2]) {
                          / (change_un_Mat[2][0] * x + change_un_Mat[2][1] * y
                             + change_un_Mat[2][2]));
     if (local_x
-        >= 0 && local_y >= 0) {
+        >= 0 && local_y >= 0&&local_x<TEMP_COL&&local_y<TEMP_ROW) {
         local[0] = local_y;
         local[1] = local_x;
     } else {

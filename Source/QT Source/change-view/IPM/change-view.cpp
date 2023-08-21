@@ -100,10 +100,7 @@ void change_view() {
     warpMatrix = getPerspectiveTransform(src_coners, dst_coners);
     cout << "逆矩阵solve333" << endl  << endl;
 
-    double change_Mat[3][3];
-    for (int i = 0; i < 3; i++)
-        for (int j = 0; j < 3; j++)
-            change_Mat[i][j] = warpMatrix.at<double>(i, j);
+
     cout << "逆矩阵solve44444" << endl  << endl;
 cout<<high<<"   "<<width<<endl;
     cout << "逆矩阵solve555" << endl  << endl;
@@ -164,9 +161,11 @@ cout<<high<<"   "<<width<<endl;
 //        }}
 
     namedWindow("result", 0);
-    int n1 = screenX / 5 * 3 / width_end;
-    int n2 = screenY / 5 * 3 / high_end;
-    resizeWindow("result", width_end * min(n1, n2), high_end * min(n1, n2));
+    double n1 = 1.0*screenX  * 3/5 / width_end;
+    double n2 =1.0* screenY * 3 /5/ high_end;
+
+
+    resizeWindow("result",(int) width_end * min(n1, n2),(int) high_end * min(n1, n2));
     imshow("result", src1);
 
 

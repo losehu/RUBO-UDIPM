@@ -14,6 +14,7 @@
 #include "distorted.h"
 #include "qstring"
 #include"QImage"
+#include "QTime"
 #include<QRegularExpression>
  bool  alpha=1;
  udm_p udm_pic;

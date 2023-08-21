@@ -28,7 +28,6 @@ public:
     QAction *action_exit;
     QWidget *centralwidget;
     QRadioButton *radioButton_ipm;
-    QRadioButton *radioButton_udipm;
     QPushButton *pushButton;
     QRadioButton *radioButton_udm;
     QMenuBar *menubar;
@@ -47,19 +46,16 @@ public:
         centralwidget->setObjectName("centralwidget");
         radioButton_ipm = new QRadioButton(centralwidget);
         radioButton_ipm->setObjectName("radioButton_ipm");
-        radioButton_ipm->setGeometry(QRect(100, 10, 130, 20));
+        radioButton_ipm->setGeometry(QRect(100, 30, 130, 20));
         QFont font;
         font.setKerning(true);
         radioButton_ipm->setFont(font);
-        radioButton_udipm = new QRadioButton(centralwidget);
-        radioButton_udipm->setObjectName("radioButton_udipm");
-        radioButton_udipm->setGeometry(QRect(100, 90, 130, 20));
         pushButton = new QPushButton(centralwidget);
         pushButton->setObjectName("pushButton");
         pushButton->setGeometry(QRect(100, 130, 93, 28));
         radioButton_udm = new QRadioButton(centralwidget);
         radioButton_udm->setObjectName("radioButton_udm");
-        radioButton_udm->setGeometry(QRect(100, 50, 130, 20));
+        radioButton_udm->setGeometry(QRect(100, 80, 130, 20));
         MenuWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MenuWindow);
         menubar->setObjectName("menubar");
@@ -89,7 +85,6 @@ public:
         action_exit->setShortcut(QCoreApplication::translate("MenuWindow", "Ctrl+Q", nullptr));
 #endif // QT_CONFIG(shortcut)
         radioButton_ipm->setText(QCoreApplication::translate("MenuWindow", "\351\200\206  \351\200\217  \350\247\206", nullptr));
-        radioButton_udipm->setText(QCoreApplication::translate("MenuWindow", "\345\216\273\347\225\270\345\217\230+\351\200\206\351\200\217\350\247\206", nullptr));
         pushButton->setText(QCoreApplication::translate("MenuWindow", "\347\241\256\345\256\232", nullptr));
         radioButton_udm->setText(QCoreApplication::translate("MenuWindow", "\345\216\273  \347\225\270  \345\217\230", nullptr));
         menu_doc->setTitle(QCoreApplication::translate("MenuWindow", "\346\226\207\344\273\266", nullptr));
