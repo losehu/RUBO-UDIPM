@@ -12,18 +12,6 @@ github:https://github.com/wu58430/RUBO-UDIPM
 
 如只需要上位机程序,请下载Release。
 
-请为下载和使用此软件的每个用户阅读以下内容：
-
-RUBO UDIPM遵循GPLv3协议，是开源的。
-
-仅用于竞争、学习和交流，不用于商业或付费教学目的！！！！！！！
-
-Please read the following for each user who downloads and uses this software:
-
-Rubo IPM follows the GPLv3 protocol and is open source.
-
-Only for competition, learning and communication, not for commercial or paid teaching purposes!!!!!!!
-
 更新日志
 
         2022.8.23        修复了不同版本windows兼容问题
